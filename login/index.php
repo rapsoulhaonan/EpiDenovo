@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>RCRDB Bioinformatics</title>
+	<link rel="stylesheet" href="https://cdnsjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 	<meta name="description" content="Academic and higher education website design. Websites for educational institutions, academic departments, research labs, institutes, and non-profits." /><meta name="keywords" content="" />                         <!-- keyword and description from CMS -->
 
