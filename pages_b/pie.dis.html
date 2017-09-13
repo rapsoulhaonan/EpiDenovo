@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Highcharts Donut Chart</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript">
+    $(function () {
+       var colors = Highcharts.getOptions().colors,
+	   
+       categories = ['RNA', 'ChIP', 'WT_KO/KD'],
+       data = [{
+           y: 11,
+           color: colors[0],
+           drilldown: {
+               name: 'RNA',
+               categories: ['Total', 'Mature', 'Ribo', 'Nascent', 'miRNA'],
+               data: [3, 2, 2, 2, 2],
+               color: colors[0]
+           }
+       }, {
+           y: 54,
+           color: colors[1],
+           drilldown: {
+               name: 'ChIP',
+               categories: ['CoreClock', 'Histone', 'OTFs'],
+               data: [23, 15, 16],
+               color: colors[1]
+           }
+       }, {
+           y: 20,
+           color: colors[2],
+           drilldown: {
+               name: 'WT_KO/KD',
+               categories: ['CoreClock', 'OTFs'],
+               data: [11, 9],
+               color: colors[2]
+           }
+       }, ],
+       browserData = [],
+       versionsData = [],
+       i,
+       j,
+       dataLen = data.length,
+       drillDataLen,
+       brightness;
+
+
+            // Build the data arrays
+            for (i = 0; i < dataLen; i += 1) {
+
+                // add browser data
+                browserData.push({
+                    name: categories[i],
+                    y: data[i].y,
+                    color: data[i].color
+                });
+
+                // add version data
+                drillDataLen = data[i].drilldown.data.length;
+                for (j = 0; j < drillDataLen; j += 1) {
+                    brightness = 0.2 - (j / drillDataLen) / 5;
+                    versionsData.push({
+                        name: data[i].drilldown.categories[j],
+                        y: data[i].drilldown.data[j],
+                        color: Highcharts.Color(data[i].color).brighten(brightness).get()
+                    });
+                }
+            }
+
+
+            var chartype = {
+                type: 'pie'
+            }
+            var chartitle = {
+                text: 'Collected public data sets'
+            }
+            var chartsubtitle = {
+                text: 'Source: <a href="http://netmarketshare.com/">netmarketshare.com</a>'
+            }
+            var chartooltip = {
+                valueSuffix: ' '
+            }
+            var chartyaxis = {
+                title: {
+                    text: 'Total percent market share'
+                }
+            }
+            var chartplotoptions = {
+                pie: {
+                    shadow: false,
+                    center: ['50%', '50%']
+                }
+            }
+            var chartseries = [{
+                name: 'Type data sets',
+                data: browserData,
+                size: '60%',
+                dataLabels: {
+                    formatter: function () {
+                        return this.y > 5 ? this.point.name : null;
+                    },
+                    color: '#ffffff',
+                    distance: -30
+                }
+            }, {
+                name: 'Number',
+                data: versionsData,
+                size: '80%',
+                innerSize: '60%',
+                dataLabels: {
+                    formatter: function () {
+                        // display only if larger than 1
+                        return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y : null;
+                    }
+                }
+            }]
+            $('#container').highcharts({
+				credits:{
+					enabled:false
+				},
+                chart:chartype,
+                title: chartitle,
+                tooltip: chartooltip,
+                yAxis:chartyaxis,
+                plotOptions: chartplotoptions,
+                series: chartseries
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+</body>
+</html>
