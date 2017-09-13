@@ -73,19 +73,20 @@ Finally, Dahl et al. found stage-specific H3K27ac domains (6), which are presume
 </dd>
 </dl>
 
+## References
 <dl>
   <dt>Zhou, J. and Troyanskaya, O.G. (2015) Predicting effects of noncoding variants with deep learning-based sequence model. Nat Methods, 12, 931-934.</dt>
 
-  <dt>Markdown in HTML</dt>
+  <dt>Alipanahi, B., Delong, A., Weirauch, M.T. and Frey, B.J. (2015) Predicting the sequence specificities of DNA- and RNA-binding proteins by deep learning. Nat Biotechnol, 33, 831-838.</dt>
   
-  <dt>Markdown in HTML</dt>
+  <dt>Lee, D., Gorkin, D.U., Baker, M., Strober, B.J., Asoni, A.L., McCallion, A.S. and Beer, M.A. (2015) A method to predict the impact of regulatory variants from DNA sequence. Nat Genet, 47, 955-961.</dt>
   
-  <dt>Markdown in HTML</dt>
+  <dt>Whitaker, J.W., Chen, Z. and Wang, W. (2015) Predicting the human epigenome from DNA motifs. Nat Methods, 12, 265-272, 267 p following 272.</dt>
   
-  <dt>Markdown in HTML</dt>
+  <dt>Liu, X., Wang, C., Liu, W., Li, J., Li, C., Kou, X., Chen, J., Zhao, Y., Gao, H., Wang, H. et al. (2016) Distinct features of H3K4me3 and H3K27me3 chromatin domains in pre-implantation embryos. Nature, 537, 558-562.</dt>
   
-  <dt>Markdown in HTML</dt>
+  <dt>Dahl, J.A., Jung, I., Aanes, H., Greggains, G.D., Manaf, A., Lerdrup, M., Li, G., Kuan, S., Li, B., Lee, A.Y. et al. (2016) Broad histone H3K4me3 domains in mouse oocytes modulate maternal-to-zygotic transition. Nature, 537, 548-552.</dt>
   
-  <dt>Markdown in HTML</dt>
+  <dt>Zhang, B., Zheng, H., Huang, B., Li, W., Xiang, Y., Peng, X., Ming, J., Wu, X., Zhang, Y., Xu, Q. et al. (2016) Allelic reprogramming of the histone modification H3K4me3 in early mammalian development. Nature, 537, 553-557.</dt>
 
 </dl>
