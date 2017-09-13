@@ -13,7 +13,7 @@ EpiDenovo is a database for annotation of the associations between embryonic epi
 </dd>
 </dl>
 
-# 
+#
 
 ![graph](images/demo/slider/workflow1.png)
 
