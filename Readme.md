@@ -104,6 +104,10 @@ The total score of a DNM is the sum of scores of the five functional categories.
 </dd>
 </dl>
 
+## For more you want to explore 
+
+(http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
+
 ## References
 <dl>
 
