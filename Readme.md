@@ -39,3 +39,7 @@ Liu et al. found that the number of regions that contain canonical H3K4me3 but n
 ## Fig.2 Dynamic landscape of histone modification
 
 ![graph](images/demo/slider/Fig2.jpg)
+
+##
+
+Finally, Dahl et al. found stage-specific H3K27ac domains (6), which are presumed to activate the expression of nearby genes. H3K27ac domains tended to be near genes associated with ZGA, and the authors used the domains to identify transcription factors that potentially bind to these nearby genes to regulate early, stage-specific developmental programs. Further work will be required to determine the specific details of the mechanisms by which these transcription factors drive development.
