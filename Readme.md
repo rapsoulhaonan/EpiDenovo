@@ -2,6 +2,10 @@
 
 [![GitHub release](https://img.shields.io/badge/EpiDenovo-release%20V1.1-brightgreen.svg)](https://github.com/rapsoulhaonan/EpiDenovo/releases)
 
+## For more you want to explore at our dabase site 
+
+[![GitHub release](https://img.shields.io/badge/EpiDenovo-Searching%20Engine-brightgreen.svg)](http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
+
 ## What is EpiDenovo?
 <dl>
 <dd>
@@ -103,10 +107,6 @@ For the other four regulatory categories, we used the number of annotated hits (
 The total score of a DNM is the sum of scores of the five functional categories. The calculation of the scoring system was implemented by R and Perl (3).
 </dd>
 </dl>
-
-## For more you want to explore 
-
-[![GitHub release](https://img.shields.io/badge/EpiDenovo-Searching%20Engine-brightgreen.svg)](http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
 
 ## References
 <dl>
