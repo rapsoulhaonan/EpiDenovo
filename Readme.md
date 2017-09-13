@@ -13,10 +13,8 @@ EpiDenovo, a database that is freely available at
 http://61.148.58.210:8080/EpiDenovo/, and which provides the
 annotation of the associations between embryonic epigenomes and
 DNMs in developmental disorders, including several neuropsychiatric
-
 disorders and congenital heart disease. EpiDenovo provides an easy-to-
 use web interface allowing users rapidly to find the epigenetic signatures
-
 of DNMs and the expression patterns of the genes that they regulate
 during embryonic development. In summary, EpiDenovo is a useful
 resource for selecting candidate genes for further functional studies in
