@@ -6,7 +6,7 @@ Starting from fertilization and ending with implantation, preimplantation embryo
 
 ## 
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+Over a million DNA regulatory elements have been cataloged in the mammalian genome, but it remains challenging for linking these elements to the genes that they regulate in the process of early embryo development. We developed eMED, a statistical platform that connects regulatory elements and chromatin state to target genes using big data of high-throughput sequencing and state-of-the-art methods of deep learning. We curated 1,768 high-throughput sequencing datasets for mammalian embryonic development from Gene Expression Omnibus (GEO). These datasets include data from RNA-seq/miRNA-seq, ChIP-seq, ATAC-seq, Hi-C and Dnase-seq/FAIRE-seq. Moreover, we employ four deep learning methods to reanalyze the chromatin features based on the peaks called by MACS. These state-of-the-art methods of deep learning include DeepSEA (1), DeepBind (2), deltaSVM (3) and Epigram (4). We apply eMED to investigate how thousands of dynamically accessible elements orchestrate gene regulation in mammalian early embryo development. Overall, we spare no effort to interpret the epigenetic regulation involved in drastic epigenetic remodeling process in oocytes and sperm, and at early stages of embryonic development. 
 
 ## Motivation
 
