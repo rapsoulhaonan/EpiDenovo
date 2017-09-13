@@ -74,9 +74,18 @@ Finally, Dahl et al. found stage-specific H3K27ac domains (6), which are presume
 </dl>
 
 <dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+  <dt>Zhou, J. and Troyanskaya, O.G. (2015) Predicting effects of noncoding variants with deep learning-based sequence model. Nat Methods, 12, 931-934.</dt>
 
   <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  
+  <dt>Markdown in HTML</dt>
+  
+  <dt>Markdown in HTML</dt>
+  
+  <dt>Markdown in HTML</dt>
+  
+  <dt>Markdown in HTML</dt>
+  
+  <dt>Markdown in HTML</dt>
+
 </dl>
