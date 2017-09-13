@@ -106,7 +106,7 @@ The total score of a DNM is the sum of scores of the five functional categories.
 
 ## For more you want to explore 
 
-(http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
+[![GitHub release](https://img.shields.io/badge/EpiDenovo-Searching%20Engine-brightgreen.svg)](http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
 
 ## References
 <dl>
