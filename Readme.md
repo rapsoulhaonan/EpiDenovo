@@ -4,7 +4,7 @@
 
 ## For more you want to explore at our domain 
 
-[![GitHub release](https://img.shields.io/badge/EpiDenovo-Searching%20Engine-blue.svg)](http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
+[![GitHub release](https://img.shields.io/badge/EpiDenovo-JBrowse%20Searching%20Engine-blue.svg)](http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
 
 ## What is EpiDenovo?
 <dl>
