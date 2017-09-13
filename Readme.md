@@ -82,7 +82,7 @@ Each mutation was scored, based on its annotated records in five functional cate
 
 ## 
 
-## 
+![graph](images/demo/slider/doc11.png)
 
 ## 
 
@@ -94,11 +94,11 @@ For the other four regulatory categories, we used the number of annotated hits (
 
 ## 
 
-## Database architecture
+![graph](images/demo/slider/doc22.png)
 
 <dl>
 <dd>
-All metadata in EpiDenovo were stored in a MySQL database while the network data, including the co-expression network and the regulatory network with do novo mutation, were deposited in neo4j, which is a high-performance graph database management system. The web interface of EpiDenovo was implemented in Cascading Style Sheets (CSS), Hyper Text Markup Language (HTML) and a Hypertext Preprocessor (PHP). The web design was derived from the free templates of Bootstrap (http://getbootstrap.com). Signal data visualization was implemented by using the JBrowse Genome Browser (26). The liftOver routine was employed, with a corresponding chain file from UCSC to convert genomic coordinates between different genome versions of humans.
+The total score of a DNM is the sum of scores of the five functional categories. The calculation of the scoring system was implemented by R and Perl (3).
 </dd>
 </dl>
 
