@@ -2,7 +2,7 @@
 
 [![GitHub release](https://img.shields.io/badge/EpiDenovo-release%20V1.1-brightgreen.svg)](https://github.com/rapsoulhaonan/EpiDenovo/releases)
 
-## For more you want to explore at our dabase site 
+## For more you want to explore at our domain 
 
 [![GitHub release](https://img.shields.io/badge/EpiDenovo-Searching%20Engine-brightgreen.svg)](http://61.148.58.210:8080/EpiDenovo/jbrowse.php)
 
