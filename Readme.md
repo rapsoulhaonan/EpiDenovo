@@ -22,48 +22,41 @@ v.	It provides motif enrichment in peaks of epigenetic factor for each experimen
 </dl>
 
 ## 
-<dl>
-<dd>
-Gene expression changes drastically during the generation of oocytes and sperm in mammals, and halts completely by the time these cells are fully mature. In mice, expression resumes shortly after fertilization, with a minor wave of gene activation (dubbed zygotic genome activation; ZGA). A second, major wave of ZGA occurs at the late two-cell stage, marking deployment of the developmental gene-expression program. Four divisions later, a cell population called the inner cell mass develops. These cells will form the embryo proper, and can be extracted to derive embryonic stem (ES) cells in vitro. The epigenomic state of ES cells has been thoroughly investigated, but that of earlier developmental stages has remained elusive, mostly owing to the minimal amount of material available for study.
-</dd>
-</dl>
-
-## 
 
 ![graph](images/demo/slider/workflow1.png)
 
-## 
+## Data downloading and preparation
 <dl>
 <dd>
-Gene expression changes drastically during the generation of oocytes and sperm in mammals, and halts completely by the time these cells are fully mature. In mice, expression resumes shortly after fertilization, with a minor wave of gene activation (dubbed zygotic genome activation; ZGA). A second, major wave of ZGA occurs at the late two-cell stage, marking deployment of the developmental gene-expression program. Four divisions later, a cell population called the inner cell mass develops. These cells will form the embryo proper, and can be extracted to derive embryonic stem (ES) cells in vitro. The epigenomic state of ES cells has been thoroughly investigated, but that of earlier developmental stages has remained elusive, mostly owing to the minimal amount of material available for study.
+All raw data deposited in SRA format were downloaded from GEO using Aspera and converted into the FASTQ format using the fastq-dump of Sratoolkit from NCBI. Sequencing adapters and low quality sequences were trimmed using the Trim Galore program of Babraham Bioinformatics (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/), with default parameters.
 </dd>
 </dl>
 
-##
+## Reads mapping and coverage
 <dl>
 <dd>
-Histone modification reprogramming is more complex than DNA methylation and no general model can be drawn from the accessible experimental data so far. However, similar to DNA methylation, histone modification changes dynamically during preimplantation development in stage- and cell type-specific manners, which are required for the precise regulation of gene expression. As participants in histone modification, the histone acetylases and deacetylases are also involved in chromatin remodeling and help to pave the path for various factors to the DNA..
+All RNA-seq data were mapped to the mm10 genome for mouse, and hg38 genome for human, using STAR (v2.5.3a) (3,4), which was shown to be highly effective in mapping RNA-seq reads containing SNPs (5). Then, duplicated reads for pair-end data were removed, but not single-end data by SAMtools (v1.5) (6). All ChIP-seq, ATAC-seq and Dnase-seq (Mnase-seq or FAIRE-seq) data were mapped to the mm10 genome for mouse, and hg38 genome for humans, by using SpeedSeq (v0.1.2) (7), which is an open-source genome analysis platform that achieves alignment, variant detection and function with a low memory requirement. Then, we removed any duplicated reads for both pair-end and single-end data using SAMtools. For all sequencing datasets, the bigwig files for JBrowse visualization were generated from BAM files by using “bamCoverage” from deepTools (8) with parameters “--ignoreDuplicates --normalizeUsingRPKM --skipNonCoveredRegions --binSize 25 --ignoreForNormalization chrX chrM”. Samples with too low coverage (mapped data < 1M) were filtered.
 </dd>
 </dl>
 
-## 
+## Peak calling and annotation
 <dl>
 <dd>
-The four current studies analysed the regions of the genome with which three histone modifications are associated in sperm and oocytes and in early mouse embryos. The authors adapted techniques to allow the analysis of just a few cells. First, Liu et al. (5), Dahl et al. (6) and Zhang et al. (7) studied modification of the amino-acid residue lysine 4 (K4) on histone H3 by three methyl groups (a modification referred to as H3K4me3). Second, Dahl et al. and Wu et al.4 examined modification of lysine 27 (K27) by an acetyl group (H3K27ac). Third, Liu et al. and Wu et al. analysed trimethylation of K27 (H3K27me3). The studies differed in the number of cells analysed and how the DNA and associated proteins (collectively called chromatin) were treated before analysis, but the groups all reached similar conclusions.
+BAM files of mapping results were merged for the same sample using SAMtools and converted to BED format by using BEDTools (9). Peaks of regulatory regions were called for each sample by using MACS2 (10) from datasets of ChIP-seq, ATAC-seq and DNase-seq with parameters “-f BED -B -q 0.01 --fix-bimodal --extsize 147 --keep-dup auto”. In particular, the input signal was used as the control to call peaks for the ChIP-seq dataset which has a corresponding control (input) experiment (Table S7). Peak annotation was performed by using HOMER (11) with default parameters. Motif analysis on peak regions was performed with HOMER function findMotifsGenome.pl with parameters “-size 50 -mask”. In addition, 74,060,441 peaks regions were curated from GTRD (12) in order to expand the annotation of transcription binding sites from other tissues or cells.
 </dd>
 </dl>
 
-## 
+## Hi-C data analysis
 <dl>
 <dd>
-In ES cells and mature cell types, H3K4me3 is primarily clustered around small DNA regions at which gene transcription begins, and is associated with gene activity. One of the most striking findings of the current papers is that, in oocytes, H3K4me3 is enriched at low levels across large genomic regions, spanning more than 10 kilobases, and is mostly distant from transcription start sites. This pattern of 'non-canonical' H3K4me3 persists in the fertilized oocyte and in embryos at the early two-cell stage.
+Paired-end raw reads of Hi-C libraries were aligned, processed and corrected iteratively using HiCPro (v2.8.1) (13). Briefly, sequencing reads were first independently aligned to the mouse reference genome (mm10) using the bowtie2 end-to-end algorithm and the ‘-very-sensitive’ option. To rescue the chimaeric fragments spanning the ligation junction, the ligation site was detected and the 5' fraction of the reads was aligned back to the reference genome. Unmapped reads, multiple mapped reads and singletons were then discarded. Pairs of aligned reads were then assigned to enzyme restriction fragments. Read pairs from uncut DNA, self-circle ligations and PCR artefacts were filtered out, and valid read pairs involving two different restriction fragments were used to build a contact matrix. Valid read pairs were then binned at a specific resolution by dividing the genome into bins of equal size. A 40-kb or 200-kb bin size was chosen for the examination of the global interaction patterns of the genome. The binned interaction matrices were then normalized using the iterative correction method (13,14) to correct for biases such as the GC content, mappability and effective fragment length in Hi-C data. In addition, we also curated 3,095,881 chromatin contact pairs from the 4DGeneome (15) in order to expand the annotation of chromatin interactions from other tissues or cells.
 </dd>
 </dl>
 
-##
+## Gene expression and stage-specific genes
 <dl>
 <dd>
-Liu et al. found that the number of regions that contain canonical H3K4me3 but not H3K27me3 increased sharply at the late two-cell stage. By contrast, the number of H3K27me3-only regions increased gradually (Fig. 2). This probably reflects different dynamics, and hence different mechanisms, in establishing these two epigenetic marks. H3K4me3 and H3K27me3 are mutually exclusive up to the 16-cell stage, possibly because of the low levels of H3K27me3. By contrast, ES cells contain many domains marked by both such histone modifications. Thus, bivalent domains of modification are established at later stages of development. By having both 'active' and 'repressive' modifications, bivalent domains are thought to be crucial for the efficient expression of lineage-specific developmental programs as cells start to differentiate into mature lineages.
+BAM files of RNA-seq data were merged for the same sample using SAMtools (6), and transcript reconstruction was performed by StringTie (version v1.3.3b) (16), based on the GTF gene annotation of Ensembl GRCh38 (release 89). Chimeric reads, multi-overlapping reads and low-quality reads (MAPQ < 10) were excluded when a fragment count for each gene was extracted by using featureCounts (17) from Subread package (18) with parameters “--primary –Q 10 –p -C -F GTF -T 16 -s 0”. The FPKM value of gene expression was also determined by perl script. A one-way analysis of variance like (ANOVA-like) test was applied in order to screen for genes that were differentially expressed among all groups by using edgeR (19,20) with the function “glmFit” and “glmLRT”.
 </dd>
 </dl>
 
@@ -71,11 +64,41 @@ Liu et al. found that the number of regions that contain canonical H3K4me3 but n
 
 ![graph](images/demo/slider/Fig2.jpg)
 
-##
+## Gene co-expression and function enrichment analysis
 
 <dl>
 <dd>
-Finally, Dahl et al. found stage-specific H3K27ac domains (6), which are presumed to activate the expression of nearby genes. H3K27ac domains tended to be near genes associated with ZGA, and the authors used the domains to identify transcription factors that potentially bind to these nearby genes to regulate early, stage-specific developmental programs. Further work will be required to determine the specific details of the mechanisms by which these transcription factors drive development.
+Co-expression analysis represents a powerful tool for the identification of genes involved in the same molecular process. Because genes that participate in the same molecular process are often expressed in similar ways across different stages of development, we can use the expression profiles of genes with known functions in order to identify other genes with related functions. To understand the co-expression relationships between genes at a transcriptome-wide level, weighted gene co-expression network analysis (WGCNA) (21) was performed, as this is capable of determining the activity and importance of each module in each subpopulation of samples (22). Proper soft-thresholding power was determined by performing an analysis of the network topology before construction of the network. Then, one-step network construction workflow with a soft-thresholding power value of 6 for human and 8 for mouse, respectively, was employed. Genes with null expression < 98% in all samples (n= 51,247 for humans; n= 45,008 for mice) were selected to perform WGCNA analysis; a kME > 0.3 was assigned to an eigengene module. Co-expression networks can subsequently be interpreted by functional enrichment analysis, which is a method for identifying and ranking overrepresented functional categories in a list of genes (22). So these co-expression genes in certain networks were selected to perform function enrichment analysis, including Gene Ontology and the KEGG pathway by using R package clusterProfiler (23).
+</dd>
+</dl>
+
+## Scoring system to identify functional DNMs
+
+<dl>
+<dd>
+Each mutation was scored, based on its annotated records in five functional categories: conservation score, histone modification state, transcription factor binding sites, chromatin interacting regions and chromatin accessible regions. In contrast to the scoring scheme of EpiDenovo (24), which classified variants into classes with a heuristic scoring system, EpiDenovo employed a quantitative scoring system to evaluate the functional significance of a DNM in different categories. For the conservation category (C), we used PhyloP scores in 100 vertebrate genomes to assign conservation scores to DNMs. PhyloP scores of all DNMs in a chromosome followed a Gaussian distribution. Considering that a DNM has a conservation score of c, μ and σ, as these are the fitted parameters of the corresponding Gaussian model, then the score of the DNM in the conservation category is defined as follows:
+</dd>
+</dl>
+
+## 
+
+## 
+
+## 
+
+<dl>
+<dd>
+For the other four regulatory categories, we used the number of annotated hits (records) to assign a score to a DNM in the corresponding category. Specifically, the numbers of hits of all DNMs in each chromosome were fitted to a Poisson distribution model. Taking a DNM to have k hits in one functional category (F), λ is the fitted parameter of the corresponding Poisson model, and the score of the DNM in this category is defined as follows:
+</dd>
+</dl>
+
+## 
+
+## Database architecture
+
+<dl>
+<dd>
+All metadata in EpiDenovo were stored in a MySQL database while the network data, including the co-expression network and the regulatory network with do novo mutation, were deposited in neo4j, which is a high-performance graph database management system. The web interface of EpiDenovo was implemented in Cascading Style Sheets (CSS), Hyper Text Markup Language (HTML) and a Hypertext Preprocessor (PHP). The web design was derived from the free templates of Bootstrap (http://getbootstrap.com). Signal data visualization was implemented by using the JBrowse Genome Browser (26). The liftOver routine was employed, with a corresponding chain file from UCSC to convert genomic coordinates between different genome versions of humans.
 </dd>
 </dl>
 
