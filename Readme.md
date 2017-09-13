@@ -12,7 +12,7 @@ Over a million DNA regulatory elements have been cataloged in the mammalian geno
 
 Gene expression changes drastically during the generation of oocytes and sperm in mammals, and halts completely by the time these cells are fully mature. In mice, expression resumes shortly after fertilization, with a minor wave of gene activation (dubbed zygotic genome activation; ZGA). A second, major wave of ZGA occurs at the late two-cell stage, marking deployment of the developmental gene-expression program. Four divisions later, a cell population called the inner cell mass develops. These cells will form the embryo proper, and can be extracted to derive embryonic stem (ES) cells in vitro. The epigenomic state of ES cells has been thoroughly investigated, but that of earlier developmental stages has remained elusive, mostly owing to the minimal amount of material available for study.
 
-## Fig. 1 Data processing workflow of eMED
+## Fig. 1 Data processing workflow of EpiDenovo
 
 ![graph](images/demo/slider/workflow1.png)
 
