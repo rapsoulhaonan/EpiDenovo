@@ -82,7 +82,7 @@ Each mutation was scored, based on its annotated records in five functional cate
 
 ## 
 
-![graph](images/demo/slider/doc11.png)
+![graph](images/demo/doc11.png)
 
 ## 
 
@@ -94,7 +94,7 @@ For the other four regulatory categories, we used the number of annotated hits (
 
 ## 
 
-![graph](images/demo/slider/doc22.png)
+![graph](images/demo/doc22.png)
 
 <dl>
 <dd>
