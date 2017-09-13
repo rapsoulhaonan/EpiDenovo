@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+
+		<script type="text/javascript">
+
+Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Dataset by Cell Types'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'Secondary follicle oocyte',
+            y: 3
+        }, {
+            name: 'Spermatid ',
+            y: 198
+        }, {
+            name: 'Spermatocyte',
+            y: 31
+        }, {
+            name: 'Spermatogonia',
+            y: 5
+        }, {
+            name: 'Oocyte',
+            y: 245
+        }, {
+            name: 'Zygote',
+            y: 127
+		}, {
+            name: '2-cell',
+            y: 107
+		}, {
+            name: '4-cell',
+            y: 69
+		}, {
+            name: '8-cell',
+            y: 66
+		}, {
+            name: 'Blastocyst',
+            y: 82
+		}, {
+            name: 'Cumulus cell',
+            y: 8
+		}, {
+            name: 'Embryonic stem cell',
+            y: 214
+		}, {
+            name: 'Epiblast',
+            y: 6
+		}, {
+            name: 'Inner cell mass',
+            y: 28
+		}, {
+            name: 'Morula',
+            y: 40
+		}, {
+            name: 'Placenta',
+            y: 139
+		}, {
+            name: 'Primordial germ cell',
+            y: 302
+		}, {
+            name: 'Pronucleus',
+            y: 8
+		}, {
+            name: 'Trophectoderm',
+            y: 5
+		}, {
+            name: 'Trophoblast cell',
+            y: 21		
+		}, {
+            name: 'Trophoblast giant cell',
+            y: 17	
+		}, {
+            name: 'Proprietary or Undetectable',
+            y: 48				
+        }]
+    }]
+});
+		</script>
+	</body>
+</html>

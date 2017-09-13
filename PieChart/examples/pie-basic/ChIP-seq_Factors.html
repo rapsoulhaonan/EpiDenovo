@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+
+		<script type="text/javascript">
+
+Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Dataset by ChIP-seq Factors'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: '5hmC',
+            y: 3
+        }, {
+            name: 'Cdx2',
+            y: 2
+        }, {
+            name: 'CTCF',
+            y: 2
+        }, {
+            name: 'CXXC',
+            y: 3
+        }, {
+            name: 'Elf5',
+            y: 2
+        }, {
+            name: 'Eomes',
+            y: 2
+		}, {
+            name: 'GATA2',
+            y: 1
+		}, {
+            name: 'GATA3',
+            y: 1
+		}, {
+            name: 'Grhl2',
+            y: 1
+		}, {
+            name: 'H2A-S40G',
+            y: 2
+		}, {
+            name: 'H2Az',
+            y: 1
+		}, {
+            name: 'H2Az',
+            y: 1
+		}, {
+            name: 'H3F3B',
+            y: 1
+		}, {
+            name: 'H3K27ac',
+            y: 22
+		}, {
+            name: 'H3K27me3',
+            y: 57
+		}, {
+            name: 'H3K27me3',
+            y: 8
+		}, {
+            name: 'H3K4me1',
+            y: 12
+		}, {
+            name: 'H3K4me2',
+            y: 3
+		}, {
+            name: 'H3K4me3',
+            y: 76
+		}, {
+            name: 'H3K9ac',
+            y: 2		
+		}, {
+            name: 'H3K9me3',
+            y: 21	
+		}, {
+            name: 'H3-pan',
+            y: 2		
+		}, {
+            name: 'H3-total',
+            y: 1	
+		}, {
+            name: 'H4K20me1',
+            y: 1	
+		}, {
+            name: 'Histone-Mnase',
+            y: 12	
+		}, {
+            name: 'IgG',
+            y: 3	
+		}, {
+            name: 'input',
+            y: 50	
+		}, {
+            name: 'LSD1',
+            y: 1	
+		}, {
+            name: 'MBD',
+            y: 3	
+		}, {
+            name: 'PolII',
+            y: 4	
+		}, {
+            name: 'SFMBT1',
+            y: 1	
+		}, {
+            name: 'Sox2',
+            y: 2	
+		}, {
+            name: 'SP1',
+            y: 1	
+		}, {
+            name: 'TBP',
+            y: 1	
+		}, {
+            name: 'Tfap2c',
+            y: 1				
+        }]
+    }]
+});
+		</script>
+	</body>
+</html>
