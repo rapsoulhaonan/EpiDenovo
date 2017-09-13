@@ -1,0 +1,1298 @@
+
+/<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RCRDB | Statistics</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <meta name="description" content="dbSUPER is a database of cell-specific super-enhancers in mouse and human. It contains 60841 super-enahcners in 86 human and 5 mouse cell/tissue types." />
+        <meta name="keywords" content="dbSUPER, Super-Enhancers, superenhacner, enhacner prediction, gene regulation, transcription, transcription factors, biological database, bioinformatics">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <!-- bootstrap 3.0.2 -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <!-- DATA TABLES -->
+        <link href="css/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <!--[if lt IE 8]>
+         <link href="css/bootstrap-ie7.css" rel="stylesheet">
+        <![endif]-->       
+        
+    </head>
+    <body class="skin-blue-light">
+        <!-- header logo: style can be found in header.less -->
+         
+       <header class="header">
+            <a href="index.php" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+            
+                <img src="img/logo.gif" class="icon" height="100%">
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span style="color:LightSkyBlue;" class="fa fa-align-justify fa-2x"></span>
+                </a>
+
+                 
+            </nav>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26231784-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</header> 
+
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">
+                <!-- sidebar: style can be found in sidebar.less -->
+                                
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <!-- search form -->
+                    <!--
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Quick search..."/>
+                            <span class="input-group-btn">
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    -->
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <br><br><br><br>
+
+                    <ul class="sidebar-menu">
+
+                        <li >
+                            <a href="index.php">
+                                <i class="fa fa-home"></i> <span>Home</span>
+                            </a>
+                        </li>
+                        <!--
+                        <li >
+                            <a href="demo.php">
+                                <i class="glyphicon glyphicon-play-circle"></i><span>A Quick Demo</span>
+                            </a>
+                        </li>
+                        -->
+                        <li class="">
+                            <a href="adv_search.php">
+                                <i class="fa fa-search"></i> <span>Search</span>
+                            </a>
+                        </li>
+<!--
+                        <li class="active">
+                            <a href="JBrowse-1.12.1/index.html">
+                                <i class="fa fa-th"></i> <span>Browser</span>
+                            </a>
+                        </li>
+-->						
+			<!--
+                        <li >
+                            <a href="import.php">
+                                <i class="fa fa-bar-chart-o"></i> <span>JBrowser</span>                                
+                            </a>
+                        </li>                        
+                        <li >
+                            <a href="download.php">
+                                <i class="fa fa-download"></i> <span>Download Data</span>                                
+                            </a>
+                        </li>
+			-->
+                         <li class='active'>
+                            <a href="stats.php">
+                                <i class="fa fa-bar-chart-o"></i> <span>Stats</span>                                
+                            </a>
+                        </li> 
+                        <li >
+                            <a href="documentation.php">
+                                <i class="fa fa-folder-open"></i> <span>Docs</span>								
+                            </a>
+                        </li>
+						<li >
+                            <a href="download.php">
+                                <i class="fa fa-download"></i><span>Download</span>
+                            </a>
+                        </li>
+						<li>
+                            <a href="links.php">
+                                <i class="fa fa-code-fork"></i> <span>Links</span>
+                            </a>
+                        </li>
+			<!--  
+                         <li >
+                            <a href="data_geo.php">
+                                <i class="fa fa-code-fork"></i><span>Data Sources</span>
+                            </a>
+                        </li> 
+                        <li >
+                            <a href="submit.php">
+                                <i class="glyphicon glyphicon-hdd"></i> <span>Submit Data</span>                                
+                            </a>
+                        </li>
+			-->  
+                        <li >
+                            <a href="contact.php">
+                                <i class="fa fa-envelope"></i> <span>Contact</span>                                
+                            </a>
+                        </li>
+                       
+                         <li >
+                            <a href="news.php">
+                                <i class="fa fa-twitter"></i> <span>News</span>                                
+                            </a>
+                        </li>             
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+                         <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+           <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Statistics
+                        <small>Distribution of collected data sets related to circadian rhythm</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="#">Stats</a></li>
+                        
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <!-- Main content -->
+                <section class="content">
+					<tr>
+                            <td>
+                                <iframe src="charts/pie.dis.html"
+                                width="530px" height="450" align="left"
+                                frameborder="no">
+                                <a href="charts/pie.dis.html">CHART</a>
+                                </iframe>
+							</td>
+							<td>
+                                <iframe src="img/tutorial/Regulatory2.png"
+                                width="520px" height="450"
+                                frameborder="no">
+                                </iframe>
+							</td>
+					</tr>
+                     <div class="row">
+                        <div class="col-md-12">
+                            <!-- AREA CHART -->
+                            <div class="box box-primary">
+                                
+                                
+                                 <div class="box-body table-responsive">
+                            <table id="example2" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                            <p>Different typse of RNA-Seq</p>
+                                                <th><table cellspacing="0" cellpadding="0">
+                                                  <col width="72">
+                                                  <col width="59">
+                                                  <col width="300">
+                                                  <col width="70">
+                                                  <col width="93" span="2">
+                                                  <col width="84">
+                                                  <tr>
+                                                    <td width="72">Species</td>
+                                                    <td width="59">Tissue</td>
+                                                    <td width="300">Type</td>
+                                                    <td width="70">Group</td>
+                                                    <td width="456">Time points</td>
+                                                    <td width="93">GEO_ID</td>
+                                                    <td width="93">SRA_ID</td>
+                                                    <td width="84">Pubmed_ID</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>mRNA-Seq</td>
+                                                    <td>mRNA</td>
+                                                    <td>ZT2,ZT6,ZT10,ZT14,ZT18,ZT22</td>
+                                                    <td>GSE36916</td>
+                                                    <td>SRP011981</td>
+                                                    <td align="right">23150795</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>mRNA-Seq</td>
+                                                    <td>mRNA</td>
+                                                    <td>ZT0,ZT4,ZT8,ZT12,ZT16,ZT20</td>
+                                                    <td>GSE70497</td>
+                                                    <td>SRP060295</td>
+                                                    <td align="right">26843191</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nascent-Seq</td>
+                                                    <td>Nascent</td>
+                                                    <td>ZT0,ZT4,ZT8,ZT12,ZT16,ZT20</td>
+                                                    <td>GSE36916</td>
+                                                    <td>SRP011984</td>
+                                                    <td align="right">23150795</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>GRO-Seq</td>
+                                                    <td>Nascent</td>
+                                                    <td>ZT1,ZT4,ZT7,ZT10,ZT13,ZT16,ZT19,ZT22</td>
+                                                    <td>GSE59486</td>
+                                                    <td>SRP044381</td>
+                                                    <td align="right">25416951</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Ribo-Seq</td>
+                                                    <td>Ribo</td>
+                                                    <td>ZT0,ZT2,ZT4,ZT6,ZT8,ZT10,ZT12,ZT14,ZT16,ZT18,ZT20,ZT22</td>
+                                                    <td>GSE67305</td>
+                                                    <td>SRP056576</td>
+                                                    <td align="right">26486724</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Ribo-Seq</td>
+                                                    <td>Ribo</td>
+                                                    <td>ZT0,ZT2,ZT4,ZT6,ZT8,ZT10,ZT12,ZT14,ZT16,ZT18,ZT20,ZT22</td>
+                                                    <td>GSE73553</td>
+                                                    <td>SRP064304</td>
+                                                    <td align="right">26554015</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>miRNA-Seq</td>
+                                                    <td>miRNA</td>
+                                                    <td>CT21,CT25,CT29,CT33,CT37,CT41,CT45</td>
+                                                    <td>-</td>
+                                                    <td>SRA025656</td>
+                                                    <td align="right">23217262</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>miRNA-seq</td>
+                                                    <td>miRNA</td>
+                                                    <td>CT2,CT5,CT8,CT11,CT14,CT17,CT20,CT23</td>
+                                                    <td>-</td>
+                                                    <td>DRP001094</td>
+                                                    <td align="right">24591654</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Total RNA-Seq</td>
+                                                    <td>Total</td>
+                                                    <td>ZT0,ZT2,ZT4,ZT6,ZT8,ZT10,ZT12,ZT14,ZT16,ZT18,ZT20,ZT22</td>
+                                                    <td>GSE67305</td>
+                                                    <td>SRP056576</td>
+                                                    <td align="right">26486724</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Total RNA-Seq</td>
+                                                    <td>Total</td>
+                                                    <td>ZT0,ZT4,ZT8,ZT12,ZT16,ZT20</td>
+                                                    <td>GSE57313</td>
+                                                    <td>SRP041679</td>
+                                                    <td align="right">24867642</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Total RNA-Seq</td>
+                                                    <td>Total</td>
+                                                    <td>ZT0,ZT2,ZT4,ZT6,ZT8,ZT10,ZT12,ZT14,ZT16,ZT18,ZT20,ZT22</td>
+                                                    <td>GSE73552</td>
+                                                    <td>SRP064298</td>
+                                                    <td align="right">26554015</td>
+                                                  </tr>
+                                                </table></th>
+                                                <!--
+                                                <th>Reference</th>
+                                            -->
+                                            </tr>
+                                        </thead>                                        
+                                        <tbody>
+                                                                                        
+                                            <tr>
+                                            
+                                                <td>
+                                                <p>Differential expression of WT VS KD/KO samples</p>
+                                                <table cellspacing="0" cellpadding="0">
+                                                  <col width="65">
+                                                  <col width="56">
+                                                  <col width="111">
+                                                  <col width="210">
+                                                  <col width="104">
+                                                  <col width="90">
+                                                  <tr>
+                                                    <td width="85">Species</td>
+                                                    <td width="71">Tissue</td>
+                                                    <td width="181">Gene</td>
+                                                    <td width="276">Group</td>
+                                                    <td width="212">Accession_ID</td>
+                                                    <td width="98">Pubmed_ID</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Arntl</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE70497</td>
+                                                    <td align="right">26843191</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Clock</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE30411</td>
+                                                    <td align="right">22844252</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Per2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE30139</td>
+                                                    <td align="right">24049741</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cry1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE13093</td>
+                                                    <td align="right">19940241</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cry2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE13093</td>
+                                                    <td align="right">19940241</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr1d1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE34020</td>
+                                                    <td align="right">22460952</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr1d2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE34020</td>
+                                                    <td align="right">22460952</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Rora</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE7564</td>
+                                                    <td align="right">17666523</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Rorc</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE7564</td>
+                                                    <td align="right">17666523</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Ppara</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>GSE14869</td>
+                                                    <td align="right">20059764</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>DBP-TEF-HLF</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>E-MEXP-565</td>
+                                                    <td align="right">16814730</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Hdac3</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE25937</td>
+                                                    <td align="right">21393543</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Sirt1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE57830</td>
+                                                    <td align="right">25083875</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Sirt6</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE57830</td>
+                                                    <td align="right">25083875</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Ncor1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE42537</td>
+                                                    <td align="right">23292142</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Ncor2</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE42537</td>
+                                                    <td align="right">23292142</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cebpa</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>E-MTAB-178</td>
+                                                    <td align="right">20378774</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr3c1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE75682</td>
+                                                    <td align="right">26711253</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Ncoa2</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE55002</td>
+                                                    <td align="right">16423883</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Usf1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>GSE17442</td>
+                                                    <td align="right">19995791</td>
+                                                  </tr>
+                                                </table></td>
+                                        </tr>   
+                                        <tr>
+                                                <td>
+                                                <p>ChIP-Seq data sets of transcriptional factors or histone modifications</p>
+                                                <table cellspacing="0" cellpadding="0">
+                                                  <col width="70">
+                                                  <col width="70">
+                                                  <col width="80">
+                                                  <col width="300">
+                                                  <col width="329">
+                                                  <col width="108">
+                                                  <col width="100">
+                                                  <col width="94">
+                                                  <tr>
+                                                    <td width="70">Species</td>
+                                                    <td width="70">Tissue</td>
+                                                    <td width="80">Antibody</td>
+                                                    <td width="300">Group</td>
+                                                    <td width="329">Time points</td>
+                                                    <td width="108">GEO_number</td>
+                                                    <td width="100">SRA_ID</td>
+                                                    <td width="94">Pubmed_ID</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Arntl</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT2,ZT6,ZT10,ZT14,ZT18,ZT22</td>
+                                                    <td>GSE26602</td>
+                                                    <td>SRP005305</td>
+                                                    <td align="right">21364973</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Arntl</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT8</td>
+                                                    <td>GSE53828</td>
+                                                    <td>SRP034940</td>
+                                                    <td align="right">24385426</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Arntl</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>-</td>
+                                                    <td>GSE44609</td>
+                                                    <td>SRP018829</td>
+                                                    <td align="right">23580255</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Arntl</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Clock</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT2,CT5,CT8,CT11,CT14,CT17,CT20,CT23</td>
+                                                    <td>-</td>
+                                                    <td>DRP001092</td>
+                                                    <td align="right">24591654</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Clock</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT8</td>
+                                                    <td>GSE53828</td>
+                                                    <td>SRP034940</td>
+                                                    <td align="right">24385426</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Clock</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>-</td>
+                                                    <td>GSE44609</td>
+                                                    <td>SRP018829</td>
+                                                    <td align="right">23580255</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Clock</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Clock</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT2,ZT6,ZT10,ZT14,ZT18,ZT22</td>
+                                                    <td>GSE47144</td>
+                                                    <td>SRP022948</td>
+                                                    <td align="right">24395244</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cry1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT20</td>
+                                                    <td>GSE53828</td>
+                                                    <td>SRP034940</td>
+                                                    <td align="right">24385426</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cry1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cry2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Per1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Per2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr1d1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT8</td>
+                                                    <td>GSE34019</td>
+                                                    <td>SRP009472</td>
+                                                    <td align="right">22460952</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr1d1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT10,ZT22</td>
+                                                    <td>GSE26345</td>
+                                                    <td>SRP008783</td>
+                                                    <td align="right">22474260</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr1d1</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT10</td>
+                                                    <td>GSE67962</td>
+                                                    <td>SRP057271</td>
+                                                    <td align="right">26044300</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr1d2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT10,ZT22</td>
+                                                    <td>GSE36375</td>
+                                                    <td>SRP011388</td>
+                                                    <td align="right">21393543</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr1d2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT8</td>
+                                                    <td>GSE34019</td>
+                                                    <td>SRP009472</td>
+                                                    <td align="right">22460952</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Rora</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT10</td>
+                                                    <td>GSE67962</td>
+                                                    <td>SRP057271</td>
+                                                    <td align="right">26044300</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Rora</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT22</td>
+                                                    <td>GSE59486</td>
+                                                    <td>SRP044381</td>
+                                                    <td align="right">25416951</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Rorc</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>ZT10,ZT22</td>
+                                                    <td>GSE67962</td>
+                                                    <td>SRP057271</td>
+                                                    <td align="right">26044300</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Npas2</td>
+                                                    <td>Core clock protein</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Hdac3</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT10,ZT22</td>
+                                                    <td>GSE26345</td>
+                                                    <td>SRP008783</td>
+                                                    <td align="right">22474260</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Hdac3</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT10</td>
+                                                    <td>GSE67962</td>
+                                                    <td>SRP057271</td>
+                                                    <td align="right">26044300</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Mll3</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>CT0,CT6,CT12,CT18</td>
+                                                    <td>GSE37393</td>
+                                                    <td>SRP012311</td>
+                                                    <td align="right">23297224</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>p300</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cbp</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cebpb</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT11,ZT23</td>
+                                                    <td>GSE59752</td>
+                                                    <td>SRP044839</td>
+                                                    <td align="right">25957148</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Cebpb</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT10</td>
+                                                    <td>GSE59752</td>
+                                                    <td>SRP044839</td>
+                                                    <td align="right">25957148</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>NCoR</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT10,ZT22</td>
+                                                    <td>GSE26345</td>
+                                                    <td>SRP008783</td>
+                                                    <td align="right">22474260</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr3c1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT11,ZT23</td>
+                                                    <td>GSE59752</td>
+                                                    <td>SRP044839</td>
+                                                    <td align="right">25957148</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Nr3c1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT10</td>
+                                                    <td>GSE45674</td>
+                                                    <td>SRP020355</td>
+                                                    <td align="right">23682854</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>E4BP4</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT22</td>
+                                                    <td>GSE59486</td>
+                                                    <td>SRP044381</td>
+                                                    <td align="right">25416951</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>SMRT</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT10,ZT22</td>
+                                                    <td>GSE51045</td>
+                                                    <td>SRP030120</td>
+                                                    <td align="right">24268577</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>SRC-2</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT4,ZT18</td>
+                                                    <td>GSE53039</td>
+                                                    <td>SRP033545</td>
+                                                    <td align="right">24529706</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>SREBP1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>ZT2,ZT6,ZT10,ZT14,ZT18,ZT22</td>
+                                                    <td>GSE48375</td>
+                                                    <td>SRP026395</td>
+                                                    <td align="right">24603613</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>Usf1</td>
+                                                    <td>Transcription factor</td>
+                                                    <td>-</td>
+                                                    <td>GSE44609</td>
+                                                    <td>SRP018829</td>
+                                                    <td align="right">23580255</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K27ac</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K27ac</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT3,CT6,CT9,CT12,CT15,CT18,CT21</td>
+                                                    <td>-</td>
+                                                    <td>SRP004162&nbsp;</td>
+                                                    <td align="right">23217262</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K36me3</td>
+                                                    <td>Histone modification</td>
+                                                    <td>ZT2,ZT6,ZT10,ZT14,ZT18,ZT22,ZT26</td>
+                                                    <td>GSE35788</td>
+                                                    <td>SRP010910</td>
+                                                    <td align="right">23209382</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K36me3</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K4me1</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K4me1</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT3,CT9,CT15,CT21</td>
+                                                    <td>-</td>
+                                                    <td>SRP004162&nbsp;</td>
+                                                    <td align="right">23217262</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K4me3</td>
+                                                    <td>Histone modification</td>
+                                                    <td>ZT2,ZT6,ZT10,ZT14,ZT18,ZT22,ZT26</td>
+                                                    <td>GSE35788</td>
+                                                    <td>SRP010910</td>
+                                                    <td align="right">23209382</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K4me3</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT3,CT6,CT9,CT12,CT15,CT18,CT21</td>
+                                                    <td>-</td>
+                                                    <td>SRP004162&nbsp;</td>
+                                                    <td align="right">23217262</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K4me3</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT6,CT12,CT18</td>
+                                                    <td>GSE23550</td>
+                                                    <td>SRP008786</td>
+                                                    <td align="right">23297224</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K4me3</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K79me2</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K9ac</td>
+                                                    <td>Histone modification</td>
+                                                    <td>ZT10,ZT22</td>
+                                                    <td>GSE26345</td>
+                                                    <td>SRP008783</td>
+                                                    <td align="right">22474260</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K9ac</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT4,CT8,CT12,CT16,CT20</td>
+                                                    <td>GSE39977</td>
+                                                    <td>SRP014752</td>
+                                                    <td align="right">22936566</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K9ac</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT3,CT6,CT9,CT12,CT15,CT18,CT21</td>
+                                                    <td>-</td>
+                                                    <td>SRP004162&nbsp;</td>
+                                                    <td align="right">23217262</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Mouse</td>
+                                                    <td>Liver</td>
+                                                    <td>H3K9me3</td>
+                                                    <td>Histone modification</td>
+                                                    <td>CT0,CT6,CT12,CT18</td>
+                                                    <td>GSE23550</td>
+                                                    <td>SRP008786</td>
+                                                    <td align="right">23297224</td>
+                                                  </tr>
+                                                </table></td>
+                                        </tr>
+                                         </tbody>
+                                        <tfoot> 
+                                        </tfoot>
+                                    </table>
+                                 </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col (LEFT) -->
+                        
+                    </div><!-- /.row -->
+
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+       <!-- jQuery 2.0.2 -->
+         <script src="js/jquery_2.2.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- DATA TABES SCRIPT -->
+        <script src="js/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="js/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+         <script src="js/plugins/datatables/dataTables.tableTools.min" type="text/javascript"></script>
+         <script type="text/javascript">       
+
+            $(document).ready( function () {
+                $('#example22').dataTable( {
+                    "dom": 'T<"clear">lfrtip',
+                    "tableTools": {
+                        "sSwfPath": "img/copy_csv_xls_pdf.swf"
+                    }
+                } );
+            } );
+        </script>
+        <!-- AdminLTE App -->
+        <script src="js/AdminLTE/app.js" type="text/javascript"></script>
+        <!-- Morris.js charts -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="js/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <!-- page script -->
+        <script type="text/javascript">
+            $(function() {
+                $("#example1").dataTable();
+                $('#example2').dataTable({
+                    dom: 'TC<"clear">lfrtip',
+                    tableTools: {
+                        "sSwfPath": "css/datatables/swf/copy_csv_xls_pdf.swf"
+                    },
+                    "bPaginate": false,
+                    "bSort": true,
+                    "bInfo": true,
+                    "responsive": true,
+                    "iDisplayLength": 25,
+                    "bAutoWidth": true
+                });
+            });
+        </script>
+        <!-- page script -->
+        <script type="text/javascript">
+            $(function() {
+                //DONUT CHART
+                var donut = new Morris.Donut({
+                    element: 'ses_mm9',
+                    resize: true,
+                    colors: ["#3c8dbc", "#f56954", "#00a65a", "#93168e", "#d8b446", "#003366", "#F000FF", "#800080", "#008000", "#800000"],
+                    data: [
+                        {label: "Macrophage", value: 961},
+                        {label: "Myotubes", value: 535},
+                        {label: "pro-B Cells", value: 395},
+                        {label: "Th Cells", value: 436},
+                        {label: "Hair follicle stem cells (HFSCs)", value: 377},
+                        {label: "Transit-amplifying cells (TACs)", value: 381},
+
+                        {label: "Bone Marrow", value: 350},
+                        {label: "Cerebellum", value:  325},
+                        {label: "Cortex", value:  389},
+                        {label: "E14.5 Brain", value: 400},
+                        {label: "E14.5 Heart", value: 712},
+                        {label: "E14.5 Limb", value:  524},
+                        {label: "E14.5 Liver", value: 582},
+                        {label: "ES cells", value:    911},
+                        {label: "Heart", value:   535},
+                        {label: "Intestine", value:   819},
+                        {label: "Kidney", value:  375},
+                        {label: "Liver", value:   612},
+                        {label: "Lung", value:    413},
+                        {label: "MEF", value: 661},
+                        {label: "Olfactory bulb", value:  490},
+                        {label: "Placenta", value:    737},
+                        {label: "Spleen", value:  672},
+                        {label: "Testis", value:  210},
+                        {label: "Thymus", value:  227}
+
+                    ],
+                    hideHover: 'auto'
+                });
+                //DONUT CHART
+                var donut = new Morris.Donut({
+                    element: 'ses_hg19',
+                    resize: true,
+                    colors: ["#3c8dbc", "#f56954", "#00a65a", "#93168e", "#d8b446", "#003366", "#FF00FF", "#800080", "#008000", "#800000"],
+                    data: [
+                        {label: "Adipose Nuclei", value: 781 }, 
+                        {label: "Adipose Tissue", value: 71 }, 
+                        {label: "Adrenal Gland", value: 680 }, 
+                        {label: "Aorta", value: 703 }, 
+                        {label: "Astrocytes", value: 650 }, 
+                        {label: "Bladder", value: 249 }, 
+                        {label: "Brain Angular Gyrus", value: 719 }, 
+                        {label: "Brain Anterior Caudate", value: 907 }, 
+                        {label: "Brain Cingulate Gyrus", value: 1005 }, 
+                        {label: "Brain Hippocampus Middle", value: 908 }, 
+                        {label: "Brain Hippocampus Middle 150", value: 1039 }, 
+                        {label: "Brain Inferior Temporal Lobe", value: 1067 }, 
+                        {label: "Brain Mid Frontal Lobe", value: 357 }, 
+                        {label: "CD14", value: 1019 }, 
+                        {label: "CD19 Primary", value: 688 }, 
+                        {label: "CD20", value: 970 }, 
+                        {label: "CD3", value: 664 }, 
+                        {label: "CD34 adult", value: 234 }, 
+                        {label: "CD34 fetal", value: 147 }, 
+                        {label: "CD34 Primary RO01480", value: 456 }, 
+                        {label: "CD34 Primary RO01536", value: 733 }, 
+                        {label: "CD34 Primary RO01549", value: 326 }, 
+                        {label: "CD4 Memory Primary 7pool", value: 1015 }, 
+                        {label: "CD4 Memory Primary 8pool", value: 410 }, 
+                        {label: "CD4 Naive Primary 7pool", value: 479 }, 
+                        {label: "CD4 Naive Primary 8pool", value: 571 }, 
+                        {label: "CD4p CD225int CD127p Tmem", value: 444 }, 
+                        {label: "CD4p CD25- CD45RAp Naive", value: 465 }, 
+                        {label: "CD4p CD25- CD45ROp Memory", value: 474 }, 
+                        {label: "CD4p CD25- Il17- PMAstim Th", value: 867 }, 
+                        {label: "CD4p CD25- Il17p PMAstim Th17", value: 871 }, 
+                        {label: "CD56", value: 763 }, 
+                        {label: "CD8 Memory 7pool", value: 712 }, 
+                        {label: "CD8 Naive 7pool", value: 462 }, 
+                        {label: "CD8 Naive 8pool", value: 375 }, 
+                        {label: "CD8 primiary", value: 776 }, 
+                        {label: "Colon Crypt 1", value: 665 }, 
+                        {label: "Colon Crypt 2", value: 958 }, 
+                        {label: "Colon Crypt 3", value: 644 }, 
+                        {label: "DND41", value: 442 }, 
+                        {label: "Duodenum Smooth Muscle", value: 751 }, 
+                        {label: "Esophagus", value: 1096 }, 
+                        {label: "Fetal Intestine", value: 919 }, 
+                        {label: "Fetal Intestine Large", value: 1021 }, 
+                        {label: "Fetal Muscle", value: 1339 }, 
+                        {label: "Fetal Thymus", value: 481 }, 
+                        {label: "Gastric", value: 1081 }, 
+                        {label: "GM12878", value: 257 }, 
+                        {label: "H1", value: 684 }, 
+                        {label: "H2171", value: 357 }, 
+                        {label: "H9", value: 535 }, 
+                        {label: "HCC1954", value: 477 }, 
+                        {label: "HCT-116", value: 387 }, 
+                        {label: "HeLa", value: 698 }, 
+                        {label: "HepG2", value: 497 }, 
+                        {label: "HMEC", value: 1099 }, 
+                        {label: "HSMMtube", value: 1029 }, 
+                        {label: "HUVEC", value: 912 }, 
+                        {label: "IMR90", value: 502 }, 
+                        {label: "Jurkat", value: 487 }, 
+                        {label: "K562", value: 742 }, 
+                        {label: "Left Ventricle", value: 972 }, 
+                        {label: "LNCaP", value: 539 }, 
+                        {label: "Lung", value: 1286 }, 
+                        {label: "MCF-7", value: 117 }, 
+                        {label: "MM1S", value: 640 }, 
+                        {label: "NHDF-Ad", value: 612 }, 
+                        {label: "NHLF", value: 784 }, 
+                        {label: "Osteoblasts", value: 1089 }, 
+                        {label: "Ovary", value: 478 }, 
+                        {label: "Panc1", value: 355 }, 
+                        {label: "Pancreas", value: 591 }, 
+                        {label: "Psoas Muscle", value: 505 }, 
+                        {label: "Right Atrium", value: 889 }, 
+                        {label: "Right Ventricle", value: 390 }, 
+                        {label: "RPMI-8402", value: 220 }, 
+                        {label: "Sigmoid Colon", value: 1023 }, 
+                        {label: "Skeletal Muscle", value: 618 }, 
+                        {label: "Skeletal Muscle Myoblast", value: 645 }, 
+                        {label: "Small Intestine", value: 946 }, 
+                        {label: "Spleen", value: 1197 }, 
+                        {label: "Stomach Smooth Muscle", value: 611 }, 
+                        {label: "Thymus", value: 559 }, 
+                        {label: "u87", value: 1073 }, 
+                        {label: "VACO 400", value: 635 }, 
+                        {label: "VACO 503", value: 556 }, 
+                        {label: "VACO 9m", value: 371 },
+                        {label: "DHL6", value: 566 }, 
+                        {label: "HBL1", value: 461 }, 
+                        {label: "Ly1", value: 530 }, 
+                        {label: "Ly3", value: 790 }, 
+                        {label: "Ly4", value: 786 }, 
+                        {label: "Toledo", value: 782 }, 
+                        {label: "Tonsil", value: 979} ,
+                        {label: "NCI-H69", value: 129} ,
+                        {label: "GLC16", value: 102} ,
+                        {label: "NCI-H82", value: 67},
+                        {label: "HSMM", value: 743},
+                        {label: "NHEK", value: 1024},
+                        {label: "Pancreatic islets", value: 708}
+
+                    ],
+                    hideHover: 'auto'
+                });
+            });
+        </script>
+
+   </body>
+</html>
