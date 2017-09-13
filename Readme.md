@@ -8,9 +8,9 @@ Starting from fertilization and ending with implantation, preimplantation embryo
 
 Over a million DNA regulatory elements have been cataloged in the mammalian genome, but it remains challenging for linking these elements to the genes that they regulate in the process of early embryo development. We developed eMED, a statistical platform that connects regulatory elements and chromatin state to target genes using big data of high-throughput sequencing and state-of-the-art methods of deep learning. We curated 1,768 high-throughput sequencing datasets for mammalian embryonic development from Gene Expression Omnibus (GEO). These datasets include data from RNA-seq/miRNA-seq, ChIP-seq, ATAC-seq, Hi-C and Dnase-seq/FAIRE-seq. Moreover, we employ four deep learning methods to reanalyze the chromatin features based on the peaks called by MACS. These state-of-the-art methods of deep learning include DeepSEA (1), DeepBind (2), deltaSVM (3) and Epigram (4). We apply eMED to investigate how thousands of dynamically accessible elements orchestrate gene regulation in mammalian early embryo development. Overall, we spare no effort to interpret the epigenetic regulation involved in drastic epigenetic remodeling process in oocytes and sperm, and at early stages of embryonic development. 
 
-## Motivation
+## 
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+Gene expression changes drastically during the generation of oocytes and sperm in mammals, and halts completely by the time these cells are fully mature. In mice, expression resumes shortly after fertilization, with a minor wave of gene activation (dubbed zygotic genome activation; ZGA). A second, major wave of ZGA occurs at the late two-cell stage, marking deployment of the developmental gene-expression program. Four divisions later, a cell population called the inner cell mass develops. These cells will form the embryo proper, and can be extracted to derive embryonic stem (ES) cells in vitro. The epigenomic state of ES cells has been thoroughly investigated, but that of earlier developmental stages has remained elusive, mostly owing to the minimal amount of material available for study.
 
 ## Installation
 
