@@ -106,6 +106,7 @@ The total score of a DNM is the sum of scores of the five functional categories.
 
 ## References
 <dl>
+<p>
 
 1.	Barrett, T., Wilhite, S.E., Ledoux, P., Evangelista, C., Kim, I.F., Tomashevsky, M., Marshall, K.A., Phillippy, K.H., Sherman, P.M., Holko, M. et al. (2013) NCBI GEO: archive for functional genomics data sets-update. Nucleic Acids Res, 41, D991-D995.
 
@@ -159,4 +160,5 @@ The total score of a DNM is the sum of scores of the five functional categories.
 
 26.	Buels, R., Yao, E., Diesh, C.M., Hayes, R.D., Munoz-Torres, M., Helt, G., Goodstein, D.M., Elsik, C.G., Lewis, S.E., Stein, L. et al. (2016) JBrowse: a dynamic web platform for genome visualization and analysis. Genome Biol, 17.
 
+</p>
 </dl>
