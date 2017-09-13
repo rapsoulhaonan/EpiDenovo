@@ -96,6 +96,8 @@ For the other four regulatory categories, we used the number of annotated hits (
 
 ![graph](images/demo/doc22.png)
 
+## 
+
 <dl>
 <dd>
 The total score of a DNM is the sum of scores of the five functional categories. The calculation of the scoring system was implemented by R and Perl (3).
