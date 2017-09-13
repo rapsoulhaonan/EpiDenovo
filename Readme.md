@@ -14,7 +14,7 @@ Gene expression changes drastically during the generation of oocytes and sperm i
 
 ### Fig. 1 Data processing workflow of eMED
 
-![graph](graph.png)
+![graph](workflow1.png)
 
 ## API Reference
 
