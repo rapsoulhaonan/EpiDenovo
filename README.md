@@ -116,7 +116,7 @@ jbrowse-dev.  If it is a major release, add gmod-announce and make a GMOD news i
 
 As you can tell, this process could really use some more streamlining and automation.
 
-# Lisence
+# EpiDenovo Lisence
 
 [![MIT License](https://img.shields.io/badge/MIT-License-red.svg)](https://github.com/rapsoulhaonan/EpiDenovo/blob/master/LICENSE.md)
 
