@@ -106,6 +106,7 @@ The total score of a DNM is the sum of scores of the five functional categories.
 
 ## References
 <dl>
+
 1.	Barrett, T., Wilhite, S.E., Ledoux, P., Evangelista, C., Kim, I.F., Tomashevsky, M., Marshall, K.A., Phillippy, K.H., Sherman, P.M., Holko, M. et al. (2013) NCBI GEO: archive for functional genomics data sets-update. Nucleic Acids Res, 41, D991-D995.
 
 2.	Turner, T.N., Yi, Q., Krumm, N., Huddleston, J., Hoekzema, K., HA, F.S., Doebley, A.L., Bernier, R.A., Nickerson, D.A. and Eichler, E.E. (2017) denovo-db: a compendium of human de novo variants. Nucleic Acids Res, 45, D804-D811.
