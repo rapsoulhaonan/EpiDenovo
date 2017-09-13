@@ -1,4 +1,4 @@
-## Epigenetic regulation in early mammalian development
+## A database of functional de novo mutations involved in embryonic epigenetic regulation Edit
 
 [![GitHub release](https://img.shields.io/badge/EpiDenovo-release%20V1.1-brightgreen.svg)](https://github.com/rapsoulhaonan/EpiDenovo/releases)
 
