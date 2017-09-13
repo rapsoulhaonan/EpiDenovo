@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Data>
+  <Tool>
+    <ToolId>PCC_1</ToolId>
+    <Description>Face Mill D70 HSK A63</Description>
+    <GraphicFile>Tool_PCC_1.dxf</GraphicFile>
+    <GraphicGroup>Kunden</GraphicGroup>
+    <Wobble>False</Wobble>
+    <DxfDisplayMode>0</DxfDisplayMode>
+    <VerifiedForMeasuring>True</VerifiedForMeasuring>
+    <IsLifetimeExpired>False</IsLifetimeExpired>
+    <GraphicFile1>PCC_1.dxf</GraphicFile1>
+    <GraphicGroup1>Kunden</GraphicGroup1>
+    <GraphicFile3>Tool_PCC_1_CAM.stp</GraphicFile3>
+    <GraphicGroup3>Kunden</GraphicGroup3>
+    <GraphicFile5>Tool_PCC_1_CAD.stp</GraphicFile5>
+    <GraphicGroup5>Kunden</GraphicGroup5>
+    <DxfDoMirrowX>False</DxfDoMirrowX>
+    <DxfDoMirrowY>False</DxfDoMirrowY>
+    <DxfDoRotate>False</DxfDoRotate>
+    <DxfRotateAngl>0</DxfRotateAngl>
+    <AxialRunOut>False</AxialRunOut>
+    <ScalableVectorGraphicNominal>&lt;?xml version="1.0"?&gt;
+&lt;svg width="21cm" heigth="29.7cm" viewBox="-32.1720000058413 -35.1700512460491 172.344000011683 35.3420512518904" stroke-width="0.172" X="" Y="" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;description&gt;&lt;/description&gt;
+		&lt;g id="0" stroke="rgb(255, 255, 255)" transform="scale(1, -1)" &gt;
+		&lt;/g&gt;
+		&lt;g id="CUT" stroke="rgb(255, 0, 0)" transform="scale(1, -1)" &gt;
+			&lt;line x1="140.0000" y1="0.0000" x2="140.0000" y2="30.0000"/&gt;
+			&lt;path d="M139.2000,30.0000 M140.0000,30.0000 A0.8000,0.8000 0,0,1 139.7142,30.6128" fill="none" rad="0.8000" radx="139.2000" rady="30.0000" start_angle="0.0000" end_angle="50.0000" /&gt;
+			&lt;line x1="139.7142" y1="30.6128" x2="134.7089" y2="34.8128"/&gt;
+			&lt;path d="M134.1946,34.2000 M134.7089,34.8128 A0.8000,0.8000 0,0,1 133.5818,34.7142" fill="none" rad="0.8000" radx="134.1946" rady="34.2000" start_angle="50.0000" end_angle="140.0000" /&gt;
+			&lt;line x1="133.5818" y1="34.7142" x2="131.7238" y2="32.5000"/&gt;
+		&lt;/g&gt;
+		&lt;g id="NOCUT" stroke="rgb(0, 128, 0)" transform="scale(1, -1)" &gt;
+			&lt;line x1="90.0000" y1="16.0000" x2="100.0000" y2="16.0000"/&gt;
+			&lt;line x1="90.0000" y1="16.0000" x2="90.0000" y2="15.0000"/&gt;
+			&lt;path d="M89.0000,15.0000 M90.0000,15.0000 A1.0000,1.0000 0,0,1 89.0000,16.0000" fill="none" rad="1.0000" radx="89.0000" rady="15.0000" start_angle="0.0000" end_angle="90.0000" /&gt;
+			&lt;line x1="89.0000" y1="16.0000" x2="34.0000" y2="16.0000"/&gt;
+			&lt;path d="M34.0000,24.0000 M26.0000,24.0000 A8.0000,8.0000 0,0,1 34.0000,16.0000" fill="none" rad="8.0000" radx="34.0000" rady="24.0000" start_angle="180.0000" end_angle="270.0000" /&gt;
+			&lt;line x1="26.0000" y1="24.0000" x2="26.0000" y2="31.5000"/&gt;
+			&lt;line x1="26.0000" y1="31.5000" x2="21.3775" y2="31.5000"/&gt;
+			&lt;line x1="19.8750" y1="28.8976" x2="21.3775" y2="31.5000"/&gt;
+			&lt;line x1="19.8750" y1="28.8976" x2="19.8750" y2="28.2500"/&gt;
+			&lt;path d="M19.1250,28.2500 M19.1250,27.5000 A0.7500,0.7500 0,0,1 19.8750,28.2500" fill="none" rad="0.7500" radx="19.1250" rady="28.2500" start_angle="270.0000" end_angle="0.0000" /&gt;
+			&lt;line x1="19.1250" y1="27.5000" x2="16.8750" y2="27.5000"/&gt;
+			&lt;path d="M16.8750,28.2500 M16.1250,28.2500 A0.7500,0.7500 0,0,1 16.8750,27.5000" fill="none" rad="0.7500" radx="16.8750" rady="28.2500" start_angle="180.0000" end_angle="270.0000" /&gt;
+			&lt;line x1="16.1250" y1="28.2500" x2="16.1250" y2="28.8976"/&gt;
+			&lt;line x1="16.1250" y1="28.8976" x2="14.6225" y2="31.5000"/&gt;
+			&lt;line x1="14.6225" y1="31.5000" x2="0.0000" y2="31.5000"/&gt;
+			&lt;line x1="0.0000" y1="31.5000" x2="0.0000" y2="24.2737"/&gt;
+			&lt;path d="M-0.4935,24.6150 M-0.4935,24.0150 A0.6000,0.6000 0,0,1 0.0000,24.2737" fill="none" rad="0.6000" radx="-0.4935" rady="24.6150" start_angle="270.0000" end_angle="325.3298" /&gt;
+			&lt;line x1="-1.1746" y1="24.0150" x2="-0.4935" y2="24.0150"/&gt;
+			&lt;path d="M-1.1746,24.6150 M-1.3299,24.0354 A0.6000,0.6000 0,0,1 -1.1746,24.0150" fill="none" rad="0.6000" radx="-1.1746" rady="24.6150" start_angle="255.0000" end_angle="270.0000" /&gt;
+			&lt;line x1="-2.0000" y1="24.2150" x2="-1.3299" y2="24.0354"/&gt;
+			&lt;line x1="-2.0000" y1="24.2150" x2="-30.8599" y2="22.7720"/&gt;
+			&lt;path d="M-30.8000,21.5735 M-30.8599,22.7720 A1.2000,1.2000 0,0,1 -32.0000,21.5735" fill="none" rad="1.2000" radx="-30.8000" rady="21.5735" start_angle="92.8624" end_angle="180.0000" /&gt;
+			&lt;line x1="-32.0000" y1="21.5735" x2="-32.0000" y2="0.0000"/&gt;
+		&lt;/g&gt;
+		&lt;g id="DEFPOINTS" stroke="rgb(255, 255, 255)" transform="scale(1, -1)" &gt;
+		&lt;/g&gt;
+		&lt;g id="SHAFT" stroke="rgb(255, 255, 0)" transform="scale(1, -1)" &gt;
+			&lt;line x1="131.7238" y1="32.5000" x2="122.5000" y2="32.5000"/&gt;
+			&lt;path d="M122.5000,30.0000 M122.5000,32.5000 A2.5000,2.5000 0,0,1 120.0000,30.0000" fill="none" rad="2.5000" radx="122.5000" rady="30.0000" start_angle="90.0000" end_angle="180.0000" /&gt;
+			&lt;line x1="120.0000" y1="30.0000" x2="120.0000" y2="27.5000"/&gt;
+			&lt;path d="M115.0000,27.5000 M115.0000,22.5000 A5.0000,5.0000 0,0,1 120.0000,27.5000" fill="none" rad="5.0000" radx="115.0000" rady="27.5000" start_angle="270.0000" end_angle="0.0000" /&gt;
+			&lt;line x1="115.0000" y1="22.5000" x2="101.6000" y2="22.5000"/&gt;
+			&lt;path d="M101.6000,20.9000 M101.6000,22.5000 A1.6000,1.6000 0,0,1 100.0000,20.9000" fill="none" rad="1.6000" radx="101.6000" rady="20.9000" start_angle="90.0000" end_angle="180.0000" /&gt;
+			&lt;line x1="100.0000" y1="20.9000" x2="100.0000" y2="16.0000"/&gt;
+		&lt;/g&gt;
+&lt;/svg&gt;
+</ScalableVectorGraphicNominal>
+    <IsPartsExpired>False</IsPartsExpired>
+    <UseTurningAdvisor>False</UseTurningAdvisor>
+    <TAAdapterSwapped>False</TAAdapterSwapped>
+    <ToolColorIndex>-1</ToolColorIndex>
+    <IsToolSelected>False</IsToolSelected>
+    <IsToolMeasurable>True</IsToolMeasurable>
+    <Adapter>
+      <AdapterId>2</AdapterId>
+      <Name>SK40</Name>
+      <Comment>Adapter/Vorsatzhalter SK40
+
+</Comment>
+      <AdapterType>SK-40</AdapterType>
+      <AdapterPresetter>
+        <CES>86</CES>
+        <Focus>FocusArea.1</Focus>
+        <MsrRangeWidth>3.6</MsrRangeWidth>
+        <MsrRangeHeight>3.6</MsrRangeHeight>
+        <IsTurnable>True</IsTurnable>
+        <IsDriven>True</IsDriven>
+        <IsHSKAdapter>False</IsHSKAdapter>
+        <TIReindexSpindle>False</TIReindexSpindle>
+        <CheckToolClamp>False</CheckToolClamp>
+        <ZRefMode>0</ZRefMode>
+        <ZDiaMode>0</ZDiaMode>
+        <XRefMode>0</XRefMode>
+        <XDiaMode>0</XDiaMode>
+        <UseMode>False</UseMode>
+        <RunOutDoCorrection>False</RunOutDoCorrection>
+        <AxialRadialRunOutDoCorrection>False</AxialRadialRunOutDoCorrection>
+        <DetectAdapterCenter>False</DetectAdapterCenter>
+        <BarcodeDoRotation>True</BarcodeDoRotation>
+        <BarcodeManualIllumination>False</BarcodeManualIllumination>
+        <TwoHandOperation>False</TwoHandOperation>
+        <CheckTurretTableMoveState>False</CheckTurretTableMoveState>
+        <DeployActualCount>0</DeployActualCount>
+        <DayActualCount>0</DayActualCount>
+        <NoseCntPosX>2</NoseCntPosX>
+        <NoseCntPosZ>3</NoseCntPosZ>
+        <NoseCntPosC>1</NoseCntPosC>
+        <MasterToolCES>21</MasterToolCES>
+        <MasterToolFocus>FocusArea.1</MasterToolFocus>
+        <MasterToolMsrRangeWidth>1</MasterToolMsrRangeWidth>
+        <MasterToolMsrRangeHeight>1</MasterToolMsrRangeHeight>
+        <MasterTool1Edge>False</MasterTool1Edge>
+        <MsrMode2>Measure2dMask360</MsrMode2>
+        <MsrMode2Params>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;ManageParamsMeasure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;ListPara&gt;&lt;anyType xsi:type="ParamsMeasure360"&gt;&lt;Id&gt;Measure2dMask360&lt;/Id&gt;&lt;RotAngle&gt;10&lt;/RotAngle&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasure360"&gt;&lt;Id&gt;Measure2dCris360&lt;/Id&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasure360"&gt;&lt;Id&gt;Measure2dFocus360&lt;/Id&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasureFocus360i"&gt;&lt;Id&gt;Measure2dFocus360Interval&lt;/Id&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasureScan"&gt;&lt;Id&gt;Measure2dScan&lt;/Id&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasureFollow"&gt;&lt;Id&gt;Measure2dFollow&lt;/Id&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasureFollowDxf"&gt;&lt;Id&gt;Measure2dFollowDxf&lt;/Id&gt;&lt;Path&gt;C:\Home\ZOLLER\TMS 1.16&lt;/Path&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasureFollowDxf"&gt;&lt;Id&gt;Measure2dCollisionByStep&lt;/Id&gt;&lt;Path&gt;C:\Home\ZOLLER\TMS 1.16&lt;/Path&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasureFollowDxf"&gt;&lt;Id&gt;Measure2dCollisionBySpeed&lt;/Id&gt;&lt;Path&gt;C:\Home\ZOLLER\TMS 1.16&lt;/Path&gt;&lt;/anyType&gt;&lt;anyType xsi:type="ParamsMeasureTrans"&gt;&lt;Id&gt;Measure2dCrisTrans&lt;/Id&gt;&lt;/anyType&gt;&lt;/ListPara&gt;&lt;/ManageParamsMeasure&gt;</MsrMode2Params>
+        <AdapterAxis>
+          <Axis>1</Axis>
+          <AdpAxTitle>Longitudinal axis</AdpAxTitle>
+          <AdpAxLogical>0</AdpAxLogical>
+          <AdpAxDisplayName>Z</AdpAxDisplayName>
+          <AdpAxDirection>+</AdpAxDirection>
+          <Visible>True</Visible>
+          <AutoCalibrate>True</AutoCalibrate>
+        </AdapterAxis>
+        <AdapterAxis>
+          <Axis>2</Axis>
+          <AdpAxTitle>Transverse axis</AdpAxTitle>
+          <AdpAxLogical>1</AdpAxLogical>
+          <AdpAxDisplayName>X</AdpAxDisplayName>
+          <AdpAxDirection>+</AdpAxDirection>
+          <Visible>True</Visible>
+          <AutoCalibrate>True</AutoCalibrate>
+        </AdapterAxis>
+        <AdapterAxis>
+          <Axis>3</Axis>
+          <AdpAxTitle>ROD axis</AdpAxTitle>
+          <AdpAxLogical>2</AdpAxLogical>
+          <AdpAxDisplayName>C</AdpAxDisplayName>
+          <AdpAxNominal>0</AdpAxNominal>
+          <AdpAxDirection>+</AdpAxDirection>
+          <Visible>True</Visible>
+          <AutoCalibrate>True</AutoCalibrate>
+        </AdapterAxis>
+        <AdapterAxis>
+          <Axis>4</Axis>
+          <AdpAxTitle>Y axis</AdpAxTitle>
+          <AdpAxLogical>3</AdpAxLogical>
+          <AdpAxDisplayName>Y</AdpAxDisplayName>
+          <AdpAxNominal>0</AdpAxNominal>
+          <AdpAxDirection>+</AdpAxDirection>
+          <Visible>True</Visible>
+          <AutoCalibrate>True</AutoCalibrate>
+        </AdapterAxis>
+        <AdapterAxis>
+          <Axis>5</Axis>
+          <AdpAxTitle>B axis</AdpAxTitle>
+          <AdpAxLogical>4</AdpAxLogical>
+          <AdpAxDisplayName>B</AdpAxDisplayName>
+          <AdpAxNominal>0</AdpAxNominal>
+          <AdpAxDirection>+</AdpAxDirection>
+          <Visible>True</Visible>
+          <AutoCalibrate>True</AutoCalibrate>
+        </AdapterAxis>
+        <AdapterAxis>
+          <Axis>6</Axis>
+          <AdpAxTitle>LOGICAL.W</AdpAxTitle>
+          <AdpAxLogical>5</AdpAxLogical>
+          <AdpAxDisplayName>W</AdpAxDisplayName>
+          <AdpAxNominal>0</AdpAxNominal>
+          <AdpAxDirection>+</AdpAxDirection>
+          <Visible>True</Visible>
+          <AutoCalibrate>True</AutoCalibrate>
+        </AdapterAxis>
+      </AdapterPresetter>
+    </Adapter>
+    <Article>
+      <InventoryOnReceipt>False</InventoryOnReceipt>
+      <HasOwnIdentification>False</HasOwnIdentification>
+      <ComponentList>
+        <ComponentInList>
+          <UseAtGraphicAssembling>False</UseAtGraphicAssembling>
+          <AssembledZLength>0</AssembledZLength>
+          <Position>1</Position>
+          <Quantity>1</Quantity>
+          <Component>
+            <ComponentId>PCC_1</ComponentId>
+            <Description>Milling Cutter Cap Screw M8</Description>
+            <GraphicFile>PCC_1.dxf</GraphicFile>
+            <GraphicGroup>Kunden</GraphicGroup>
+            <PartClass>3</PartClass>
+            <Fabrication>0</Fabrication>
+            <StorageUse>3</StorageUse>
+            <InterfaceCodingMachineSide>______________</InterfaceCodingMachineSide>
+            <GeneratedInterfaceCodingMachineSide>______________</GeneratedInterfaceCodingMachineSide>
+            <CouplingUseCharacteristic>True</CouplingUseCharacteristic>
+            <ScalableVectorGraphic>&lt;?xml version="1.0"?&gt;
+&lt;svg width="21cm" heigth="29.7cm" viewBox="-18 -2.20429143688028E-15 25 14" stroke-width="0.025" X="" Y="" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;description&gt;&lt;/description&gt;
+		&lt;g id="SHAFT" stroke="rgb(255, 255, 0)"&gt;
+		&lt;/g&gt;
+		&lt;g id="DEFPOINTS" stroke="rgb(255, 255, 255)"&gt;
+		&lt;/g&gt;
+		&lt;g id="0" stroke="rgb(255, 255, 255)"&gt;
+		&lt;/g&gt;
+		&lt;g id="NOCUT" stroke="rgb(0, 128, 0)"&gt;
+			&lt;line x1="7.000000000" y1="0.000000000" x2="7.000000000" y2="12.000000000"/&gt;
+			&lt;path d="M5.000000000,12.000000000 M7.000000000,12.000000000 A2.000000000,2.000000000 0,0,1 5.000000000,14.000000000" fill="none" rad="2.000000000" radx="5.000000000" rady="12.000000000" start_angle="0.000000000" end_angle="90.000000000" /&gt;
+			&lt;line x1="0.500000000" y1="14.000000000" x2="5.000000000" y2="14.000000000"/&gt;
+			&lt;line x1="0.000000000" y1="13.500000000" x2="0.500000000" y2="14.000000000"/&gt;
+			&lt;line x1="0.000000000" y1="13.500000000" x2="0.000000000" y2="5.200000000"/&gt;
+			&lt;path d="M-1.600000000,5.200000000 M-1.600000000,3.600000000 A1.600000000,1.600000000 0,0,1 0.000000000,5.200000000" fill="none" rad="1.600000000" radx="-1.600000000" rady="5.200000000" start_angle="270.000000000" end_angle="0.000000000" /&gt;
+			&lt;line x1="-1.600000000" y1="3.600000000" x2="-2.160808101" y2="3.600000000"/&gt;
+			&lt;line x1="-2.160808101" y1="3.600000000" x2="-2.163284302" y2="3.597598877"/&gt;
+			&lt;line x1="-2.163284302" y1="3.597598877" x2="-2.165685425" y2="3.600000000"/&gt;
+			&lt;line x1="-2.165685425" y1="3.600000000" x2="-2.448528137" y2="3.882842712"/&gt;
+			&lt;line x1="-2.448528137" y1="3.882842712" x2="-2.729003906" y2="3.602510380"/&gt;
+			&lt;line x1="-2.729003906" y1="3.602510380" x2="-3.009336239" y2="3.882842712"/&gt;
+			&lt;line x1="-3.292178951" y1="3.600000000" x2="-3.009336239" y2="3.882842712"/&gt;
+			&lt;line x1="-3.292178951" y1="3.600000000" x2="-3.294628143" y2="3.597571868"/&gt;
+			&lt;line x1="-3.294628143" y1="3.597571868" x2="-3.297056275" y2="3.600000000"/&gt;
+			&lt;line x1="-3.297056275" y1="3.600000000" x2="-3.579898987" y2="3.882842712"/&gt;
+			&lt;line x1="-3.579898987" y1="3.882842712" x2="-3.860347748" y2="3.602483372"/&gt;
+			&lt;line x1="-3.860347748" y1="3.602483372" x2="-4.140707089" y2="3.882842712"/&gt;
+			&lt;line x1="-4.423549801" y1="3.600000000" x2="-4.140707089" y2="3.882842712"/&gt;
+			&lt;line x1="-4.423549801" y1="3.600000000" x2="-4.426067352" y2="3.597640228"/&gt;
+			&lt;line x1="-4.426067352" y1="3.597640228" x2="-4.428427125" y2="3.600000000"/&gt;
+			&lt;line x1="-4.428427125" y1="3.600000000" x2="-4.711269837" y2="3.882842712"/&gt;
+			&lt;line x1="-4.711269837" y1="3.882842712" x2="-4.991691589" y2="3.602456363"/&gt;
+			&lt;line x1="-4.991691589" y1="3.602456363" x2="-5.272077939" y2="3.882842712"/&gt;
+			&lt;line x1="-5.554920651" y1="3.600000000" x2="-5.272077939" y2="3.882842712"/&gt;
+			&lt;line x1="-5.554920651" y1="3.600000000" x2="-5.557411194" y2="3.597613219"/&gt;
+			&lt;line x1="-5.557411194" y1="3.597613219" x2="-5.559797975" y2="3.600000000"/&gt;
+			&lt;line x1="-5.559797975" y1="3.600000000" x2="-5.842640687" y2="3.882842712"/&gt;
+			&lt;line x1="-5.842640687" y1="3.882842712" x2="-6.123130798" y2="3.602524722"/&gt;
+			&lt;line x1="-6.123130798" y1="3.602524722" x2="-6.403448789" y2="3.882842712"/&gt;
+			&lt;line x1="-6.686291501" y1="3.600000000" x2="-6.403448789" y2="3.882842712"/&gt;
+			&lt;line x1="-6.686291501" y1="3.600000000" x2="-6.688755035" y2="3.597586211"/&gt;
+			&lt;line x1="-6.688755035" y1="3.597586211" x2="-6.691168825" y2="3.600000000"/&gt;
+			&lt;line x1="-6.691168825" y1="3.600000000" x2="-6.974011537" y2="3.882842712"/&gt;
+			&lt;line x1="-6.974011537" y1="3.882842712" x2="-7.254474640" y2="3.602497714"/&gt;
+			&lt;line x1="-7.254474640" y1="3.602497714" x2="-7.534819638" y2="3.882842712"/&gt;
+			&lt;line x1="-7.817662351" y1="3.600000000" x2="-7.534819638" y2="3.882842712"/&gt;
+			&lt;line x1="-7.817662351" y1="3.600000000" x2="-7.820194244" y2="3.597654570"/&gt;
+			&lt;line x1="-7.820194244" y1="3.597654570" x2="-7.822539674" y2="3.600000000"/&gt;
+			&lt;line x1="-7.822539674" y1="3.600000000" x2="-8.105382387" y2="3.882842712"/&gt;
+			&lt;line x1="-8.105382387" y1="3.882842712" x2="-8.385818481" y2="3.602470706"/&gt;
+			&lt;line x1="-8.385818481" y1="3.602470706" x2="-8.666190488" y2="3.882842712"/&gt;
+			&lt;line x1="-8.949033201" y1="3.600000000" x2="-8.666190488" y2="3.882842712"/&gt;
+			&lt;line x1="-8.949033201" y1="3.600000000" x2="-8.951538086" y2="3.597627562"/&gt;
+			&lt;line x1="-8.951538086" y1="3.597627562" x2="-8.953910524" y2="3.600000000"/&gt;
+			&lt;line x1="-8.953910524" y1="3.600000000" x2="-9.236753237" y2="3.882842712"/&gt;
+			&lt;line x1="-9.236753237" y1="3.882842712" x2="-9.517162323" y2="3.602443697"/&gt;
+			&lt;line x1="-9.517162323" y1="3.602443697" x2="-9.797561338" y2="3.882842712"/&gt;
+			&lt;line x1="-10.080404051" y1="3.600000000" x2="-9.797561338" y2="3.882842712"/&gt;
+			&lt;line x1="-10.080404051" y1="3.600000000" x2="-10.082881927" y2="3.597600553"/&gt;
+			&lt;line x1="-10.082881927" y1="3.597600553" x2="-10.085281374" y2="3.600000000"/&gt;
+			&lt;line x1="-10.085281374" y1="3.600000000" x2="-10.368124087" y2="3.882842712"/&gt;
+			&lt;line x1="-10.368124087" y1="3.882842712" x2="-10.648601532" y2="3.602512056"/&gt;
+			&lt;line x1="-10.648601532" y1="3.602512056" x2="-10.928932188" y2="3.882842712"/&gt;
+			&lt;line x1="-11.211774901" y1="3.600000000" x2="-10.928932188" y2="3.882842712"/&gt;
+			&lt;line x1="-11.211774901" y1="3.600000000" x2="-11.214225769" y2="3.597573545"/&gt;
+			&lt;line x1="-11.214225769" y1="3.597573545" x2="-11.216652224" y2="3.600000000"/&gt;
+			&lt;line x1="-11.216652224" y1="3.600000000" x2="-11.499494937" y2="3.882842712"/&gt;
+			&lt;line x1="-11.499494937" y1="3.882842712" x2="-11.779945374" y2="3.602485048"/&gt;
+			&lt;line x1="-11.779945374" y1="3.602485048" x2="-12.060303038" y2="3.882842712"/&gt;
+			&lt;line x1="-12.343145751" y1="3.600000000" x2="-12.060303038" y2="3.882842712"/&gt;
+			&lt;line x1="-12.343145751" y1="3.600000000" x2="-12.345664978" y2="3.597641904"/&gt;
+			&lt;line x1="-12.345664978" y1="3.597641904" x2="-12.348023074" y2="3.600000000"/&gt;
+			&lt;line x1="-12.348023074" y1="3.600000000" x2="-12.630865787" y2="3.882842712"/&gt;
+			&lt;line x1="-12.630865787" y1="3.882842712" x2="-12.911289215" y2="3.602458040"/&gt;
+			&lt;line x1="-12.911289215" y1="3.602458040" x2="-13.191673888" y2="3.882842712"/&gt;
+			&lt;line x1="-13.474516600" y1="3.600000000" x2="-13.191673888" y2="3.882842712"/&gt;
+			&lt;line x1="-13.474516600" y1="3.600000000" x2="-13.477008820" y2="3.597614896"/&gt;
+			&lt;line x1="-13.477008820" y1="3.597614896" x2="-13.479393924" y2="3.600000000"/&gt;
+			&lt;line x1="-13.479393924" y1="3.600000000" x2="-13.762236636" y2="3.882842712"/&gt;
+			&lt;line x1="-13.762236636" y1="3.882842712" x2="-14.042728424" y2="3.602526399"/&gt;
+			&lt;line x1="-14.042728424" y1="3.602526399" x2="-14.323044738" y2="3.882842712"/&gt;
+			&lt;line x1="-14.605887450" y1="3.600000000" x2="-14.323044738" y2="3.882842712"/&gt;
+			&lt;line x1="-14.605887450" y1="3.600000000" x2="-14.608352661" y2="3.597587887"/&gt;
+			&lt;line x1="-14.608352661" y1="3.597587887" x2="-14.610764774" y2="3.600000000"/&gt;
+			&lt;line x1="-14.610764774" y1="3.600000000" x2="-14.893607486" y2="3.882842712"/&gt;
+			&lt;line x1="-14.893607486" y1="3.882842712" x2="-15.174072266" y2="3.602499390"/&gt;
+			&lt;line x1="-15.174072266" y1="3.602499390" x2="-15.454415588" y2="3.882842712"/&gt;
+			&lt;line x1="-15.737258300" y1="3.600000000" x2="-15.454415588" y2="3.882842712"/&gt;
+			&lt;line x1="-15.737258300" y1="3.600000000" x2="-15.739791870" y2="3.597656246"/&gt;
+			&lt;line x1="-15.739791870" y1="3.597656246" x2="-15.742135624" y2="3.600000000"/&gt;
+			&lt;line x1="-15.742135624" y1="3.600000000" x2="-16.024978336" y2="3.882842712"/&gt;
+			&lt;line x1="-16.024978336" y1="3.882842712" x2="-16.305416107" y2="3.602472382"/&gt;
+			&lt;line x1="-16.305416107" y1="3.602472382" x2="-16.585786438" y2="3.882842712"/&gt;
+			&lt;line x1="-16.868629150" y1="3.600000000" x2="-16.585786438" y2="3.882842712"/&gt;
+			&lt;line x1="-16.868629150" y1="3.600000000" x2="-16.871135712" y2="3.597629238"/&gt;
+			&lt;line x1="-16.871135712" y1="3.597629238" x2="-16.873506474" y2="3.600000000"/&gt;
+			&lt;line x1="-16.873506474" y1="3.600000000" x2="-17.156349186" y2="3.882842712"/&gt;
+			&lt;line x1="-17.156349186" y1="3.882842712" x2="-17.436759949" y2="3.602445374"/&gt;
+			&lt;line x1="-17.436759949" y1="3.602445374" x2="-17.717157288" y2="3.882842712"/&gt;
+			&lt;line x1="-18.000000000" y1="3.600000000" x2="-17.717157288" y2="3.882842712"/&gt;
+			&lt;line x1="-18.000000000" y1="3.600000000" x2="-18.000000000" y2="0.000000000"/&gt;
+		&lt;/g&gt;
+		&lt;g id="CUT" stroke="rgb(255, 0, 0)"&gt;
+		&lt;/g&gt;
+&lt;/svg&gt;
+</ScalableVectorGraphic>
+            <GraphicFile1>PCC_1.dxf</GraphicFile1>
+            <GraphicGroup1>Kunden</GraphicGroup1>
+            <GraphicFile3>PCC_1_CAM.stp</GraphicFile3>
+            <GraphicGroup3>Kunden</GraphicGroup3>
+            <GraphicFile5>PCC_1_CAD.stp</GraphicFile5>
+            <GraphicGroup5>Kunden</GraphicGroup5>
+            <Article>
+              <InventoryOnReceipt>False</InventoryOnReceipt>
+              <HasOwnIdentification>False</HasOwnIdentification>
+              <ComponentList />
+              <AccessoryList />
+            </Article>
+            <Characteristic Id="MHX_U4_04" System="DIN4000">
+              <LPR>7</LPR>
+              <BD>28</BD>
+            </Characteristic>
+            <DatasetState>0</DatasetState>
+            <InvMode />
+            <InvPhysical>False</InvPhysical>
+            <InvFullCopy>False</InvFullCopy>
+          </Component>
+        </ComponentInList>
+        <ComponentInList>
+          <UseAtGraphicAssembling>True</UseAtGraphicAssembling>
+          <AssembledZLength>50</AssembledZLength>
+          <Position>2</Position>
+          <Quantity>1</Quantity>
+          <Component>
+            <ComponentId>PCC_2</ComponentId>
+            <Description>Face Mill D70</Description>
+            <GraphicFile>PCC_2.dxf</GraphicFile>
+            <GraphicGroup>Kunden</GraphicGroup>
+            <PartClass>0</PartClass>
+            <Fabrication>0</Fabrication>
+            <StorageUse>3</StorageUse>
+            <InterfaceCodingMachineSide>FDA01600200</InterfaceCodingMachineSide>
+            <GeneratedInterfaceCodingMachineSide>FDA01600200</GeneratedInterfaceCodingMachineSide>
+            <CouplingMachineSideDiam>16</CouplingMachineSideDiam>
+            <CouplingUseCharacteristic>True</CouplingUseCharacteristic>
+            <ScalableVectorGraphic>&lt;?xml version="1.0"?&gt;
+&lt;svg width="21cm" heigth="29.7cm" viewBox="-3.5527136788005E-15 2.34018775599111E-08 40 34.998051216806" stroke-width="0.04" X="" Y="" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;description&gt;&lt;/description&gt;
+		&lt;g id="SHAFT" stroke="rgb(255, 255, 0)"&gt;
+			&lt;line x1="31.723785400" y1="32.500000000" x2="22.500000000" y2="32.500000000"/&gt;
+			&lt;path d="M22.500000000,30.000000000 M22.500000000,32.500000000 A2.500000000,2.500000000 0,0,1 20.000000000,30.000000000" fill="none" rad="2.500000000" radx="22.500000000" rady="30.000000000" start_angle="90.000000000" end_angle="180.000000000" /&gt;
+			&lt;line x1="20.000000000" y1="30.000000000" x2="20.000000000" y2="27.500000000"/&gt;
+			&lt;path d="M15.000000000,27.500000000 M15.000000000,22.500000000 A5.000000000,5.000000000 0,0,1 20.000000000,27.500000000" fill="none" rad="5.000000000" radx="15.000000000" rady="27.500000000" start_angle="270.000000000" end_angle="0.000000000" /&gt;
+			&lt;line x1="15.000000000" y1="22.500000000" x2="1.600000000" y2="22.500000000"/&gt;
+			&lt;path d="M1.600000000,20.900000000 M1.600000000,22.500000000 A1.600000000,1.600000000 0,0,1 0.000000000,20.900000000" fill="none" rad="1.600000000" radx="1.600000000" rady="20.900000000" start_angle="90.000000000" end_angle="180.000000000" /&gt;
+			&lt;line x1="0.000000000" y1="20.900000000" x2="0.000000000" y2="8.000000000"/&gt;
+			&lt;line x1="0.000000000" y1="8.000000000" x2="0.000000000" y2="0.000000023"/&gt;
+		&lt;/g&gt;
+		&lt;g id="DEFPOINTS" stroke="rgb(255, 255, 255)"&gt;
+		&lt;/g&gt;
+		&lt;g id="0" stroke="rgb(255, 255, 255)"&gt;
+		&lt;/g&gt;
+		&lt;g id="CUT" stroke="rgb(255, 0, 0)"&gt;
+			&lt;line x1="40.000000000" y1="0.000000023" x2="39.999999944" y2="30.000000047"/&gt;
+			&lt;path d="M39.200000000,30.000000000 M40.000000000,30.000000000 A0.800000000,0.800000000 0,0,1 39.714230088,30.612835554" fill="none" rad="0.800000000" radx="39.200000000" rady="30.000000000" start_angle="0.000000000" end_angle="50.000000000" /&gt;
+			&lt;line x1="39.714230088" y1="30.612835554" x2="34.708864999" y2="34.812835554"/&gt;
+			&lt;path d="M34.194634911,34.200000000 M34.708864999,34.812835554 A0.800000000,0.800000000 0,0,1 33.581799357,34.714230088" fill="none" rad="0.800000000" radx="34.194634911" rady="34.200000000" start_angle="50.000000000" end_angle="140.000000000" /&gt;
+			&lt;line x1="33.581799357" y1="34.714230088" x2="31.723785400" y2="32.500000000"/&gt;
+		&lt;/g&gt;
+		&lt;g id="NOCUT" stroke="rgb(0, 128, 0)"&gt;
+		&lt;/g&gt;
+&lt;/svg&gt;
+</ScalableVectorGraphic>
+            <GraphicFile1>PCC_2.dxf</GraphicFile1>
+            <GraphicGroup1>Kunden</GraphicGroup1>
+            <GraphicFile3>PCC_2_CAM.stp</GraphicFile3>
+            <GraphicGroup3>Kunden</GraphicGroup3>
+            <GraphicFile5>PCC_2_CAD.stp</GraphicFile5>
+            <GraphicGroup5>Kunden</GraphicGroup5>
+            <Article>
+              <InventoryOnReceipt>False</InventoryOnReceipt>
+              <HasOwnIdentification>False</HasOwnIdentification>
+              <ComponentList />
+              <AccessoryList />
+            </Article>
+            <Characteristic Id="TaperedTippedMill" System="PowerMILL">
+              <Diameter>70</Diameter>
+              <Fullcutterlength>5.29113500114644</Fullcutterlength>
+              <CornerRadius>0.8</CornerRadius>
+              <CutterLength>5.29113500114644</CutterLength>
+              <Taper>40</Taper>
+              <Flutes>8</Flutes>
+              <Coolants>1</Coolants>
+              <ExposedLength>40</ExposedLength>
+              <ShankUpperDiameter>45</ShankUpperDiameter>
+              <ShankLowerDiameter>45</ShankLowerDiameter>
+              <ShankTaperHeight>34.7088649988536</ShankTaperHeight>
+            </Characteristic>
+            <Characteristic Id="FBJ_01" System="DIN4000" NSM="DIN4000-88" TSYC="Bild 01">
+              <CCTMS>FDA</CCTMS>
+              <CZCMS>0250</CZCMS>
+              <CCFMS>02</CCFMS>
+              <CCUMS>0</CCUMS>
+              <CCSMS>0</CCSMS>
+              <LTA>50</LTA>
+              <DC>60</DC>
+              <DCX>70</DCX>
+              <BD>65</BD>
+              <DHUB>45</DHUB>
+              <DCONMS>16</DCONMS>
+              <CDX>5.29113500114644</CDX>
+              <DCCB>31</DCCB>
+              <LCCB>15</LCCB>
+              <ZEFP>8</ZEFP>
+              <KAPR>50</KAPR>
+              <ZNF>8</ZNF>
+              <CNSC>0</CNSC>
+              <CXSC>0</CXSC>
+              <HAND>R</HAND>
+              <REA>0.8</REA>
+              <ADJARP>0</ADJARP>
+              <RPMX>6000</RPMX>
+              <BMC>H</BMC>
+              <DCP>0</DCP>
+              <S_TSYC>0</S_TSYC>
+            </Characteristic>
+            <TechnologyV2>
+              <MachiningOperationId>Mill</MachiningOperationId>
+              <UseEnglishUnits>False</UseEnglishUnits>
+              <TechnologyV2Set MachiningType="RO">
+                <Position>1</Position>
+                <MachiningType>
+                  <MachiningTypeId>RO</MachiningTypeId>
+                  <Description>roughing</Description>
+                </MachiningType>
+                <TechnologyV2Record ChippingGroup="10">
+                  <UseWithChippingGroup>True</UseWithChippingGroup>
+                  <CuttingSpeed>160</CuttingSpeed>
+                  <FeedPerRevolution>3.2</FeedPerRevolution>
+                  <FeedPerTooth>0.4</FeedPerTooth>
+                  <ChippingGroup>
+                    <ChippingGroupId>10</ChippingGroupId>
+                    <Name>A1</Name>
+                    <CodeColor>-16776961</CodeColor>
+                    <MaterialSubGroup>geglüht C ≤ 0,15 %C</MaterialSubGroup>
+                    <Hardness>125 HB</Hardness>
+                  </ChippingGroup>
+                </TechnologyV2Record>
+              </TechnologyV2Set>
+              <TechnologyV2Set MachiningType="FI">
+                <Position>2</Position>
+                <MachiningType>
+                  <MachiningTypeId>FI</MachiningTypeId>
+                  <Description>finishing</Description>
+                </MachiningType>
+                <TechnologyV2Record ChippingGroup="10">
+                  <UseWithChippingGroup>True</UseWithChippingGroup>
+                  <CuttingSpeed>250</CuttingSpeed>
+                  <FeedPerRevolution>0.8</FeedPerRevolution>
+                  <FeedPerTooth>0.1</FeedPerTooth>
+                  <ChippingGroup>
+                    <ChippingGroupId>10</ChippingGroupId>
+                    <Name>A1</Name>
+                    <CodeColor>-16776961</CodeColor>
+                    <MaterialSubGroup>geglüht C ≤ 0,15 %C</MaterialSubGroup>
+                    <Hardness>125 HB</Hardness>
+                  </ChippingGroup>
+                </TechnologyV2Record>
+              </TechnologyV2Set>
+            </TechnologyV2>
+            <DatasetState>0</DatasetState>
+            <InvMode />
+            <InvPhysical>False</InvPhysical>
+            <InvFullCopy>False</InvFullCopy>
+          </Component>
+        </ComponentInList>
+        <ComponentInList>
+          <UseAtGraphicAssembling>True</UseAtGraphicAssembling>
+          <AssembledZLength>100</AssembledZLength>
+          <Position>3</Position>
+          <Quantity>1</Quantity>
+          <Component>
+            <ComponentId>PCC_3</ComponentId>
+            <Description>Arbor HSK A63 D16</Description>
+            <GraphicFile>A63-041-16_1.dxf</GraphicFile>
+            <GraphicGroup>Kunden</GraphicGroup>
+            <PartClass>2</PartClass>
+            <Fabrication>0</Fabrication>
+            <StorageUse>3</StorageUse>
+            <InterfaceCodingToolSide>FDA01600100;FDA01600200;FDA01600300</InterfaceCodingToolSide>
+            <InterfaceCodingMachineSide>HSK06300115</InterfaceCodingMachineSide>
+            <GeneratedInterfaceCodingToolSide>FDA01600100;FDA01600200;FDA01600300</GeneratedInterfaceCodingToolSide>
+            <GeneratedInterfaceCodingMachineSide>HSK06300115</GeneratedInterfaceCodingMachineSide>
+            <CouplingUseCharacteristic>True</CouplingUseCharacteristic>
+            <ScalableVectorGraphic>&lt;?xml version="1.0"?&gt;
+&lt;svg width="21cm" heigth="29.7cm" viewBox="-32 -1.92875500727024E-14 137 31.5" stroke-width="0.137" X="" Y="" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+	&lt;title&gt;&lt;/title&gt;
+	&lt;description&gt;&lt;/description&gt;
+		&lt;g id="NOCUT" stroke="rgb(0, 128, 0)"&gt;
+			&lt;line x1="105.0000" y1="0.0000" x2="105.0000" y2="3.4000"/&gt;
+			&lt;line x1="104.4000" y1="4.0000" x2="105.0000" y2="3.4000"/&gt;
+			&lt;line x1="100.0000" y1="4.0000" x2="104.4000" y2="4.0000"/&gt;
+			&lt;line x1="100.0000" y1="4.0000" x2="100.0000" y2="16.0000"/&gt;
+			&lt;line x1="90.0000" y1="16.0000" x2="100.0000" y2="16.0000"/&gt;
+			&lt;line x1="90.0000" y1="16.0000" x2="90.0000" y2="15.0000"/&gt;
+			&lt;path d="M89.0000,15.0000 M90.0000,15.0000 A1.0000,1.0000 0,0,1 89.0000,16.0000" fill="none" rad="1.0000" radx="89.0000" rady="15.0000" start_angle="0.0000" end_angle="90.0000" /&gt;
+			&lt;line x1="89.0000" y1="16.0000" x2="34.0000" y2="16.0000"/&gt;
+			&lt;path d="M34.0000,24.0000 M26.0000,24.0000 A8.0000,8.0000 0,0,1 34.0000,16.0000" fill="none" rad="8.0000" radx="34.0000" rady="24.0000" start_angle="180.0000" end_angle="-90.0000" /&gt;
+			&lt;line x1="26.0000" y1="24.0000" x2="26.0000" y2="31.5000"/&gt;
+			&lt;line x1="26.0000" y1="31.5000" x2="21.3775" y2="31.5000"/&gt;
+			&lt;line x1="19.8750" y1="28.8976" x2="21.3775" y2="31.5000"/&gt;
+			&lt;line x1="19.8750" y1="28.8976" x2="19.8750" y2="28.2500"/&gt;
+			&lt;path d="M19.1250,28.2500 M19.1250,27.5000 A0.7500,0.7500 0,0,1 19.8750,28.2500" fill="none" rad="0.7500" radx="19.1250" rady="28.2500" start_angle="-90.0000" end_angle="0.0000" /&gt;
+			&lt;line x1="19.1250" y1="27.5000" x2="16.8750" y2="27.5000"/&gt;
+			&lt;path d="M16.8750,28.2500 M16.1250,28.2500 A0.7500,0.7500 0,0,1 16.8750,27.5000" fill="none" rad="0.7500" radx="16.8750" rady="28.2500" start_angle="180.0000" end_angle="-90.0000" /&gt;
+			&lt;line x1="16.1250" y1="28.2500" x2="16.1250" y2="28.8976"/&gt;
+			&lt;line x1="16.1250" y1="28.8976" x2="14.6225" y2="31.5000"/&gt;
+			&lt;line x1="14.6225" y1="31.5000" x2="0.0000" y2="31.5000"/&gt;
+			&lt;line x1="0.0000" y1="31.5000" x2="0.0000" y2="24.2737"/&gt;
+			&lt;path d="M-0.4935,24.6150 M-0.4935,24.0150 A0.6000,0.6000 0,0,1 0.0000,24.2737" fill="none" rad="0.6000" radx="-0.4935" rady="24.6150" start_angle="-90.0000" end_angle="-34.6702" /&gt;
+			&lt;line x1="-1.1746" y1="24.0150" x2="-0.4935" y2="24.0150"/&gt;
+			&lt;path d="M-1.1746,24.6150 M-1.3299,24.0354 A0.6000,0.6000 0,0,1 -1.1746,24.0150" fill="none" rad="0.6000" radx="-1.1746" rady="24.6150" start_angle="-105.0000" end_angle="-90.0000" /&gt;
+			&lt;line x1="-2.0000" y1="24.2150" x2="-1.3299" y2="24.0354"/&gt;
+			&lt;line x1="-2.0000" y1="24.2150" x2="-30.8599" y2="22.7720"/&gt;
+			&lt;path d="M-30.8000,21.5735 M-30.8599,22.7720 A1.2000,1.2000 0,0,1 -32.0000,21.5735" fill="none" rad="1.2000" radx="-30.8000" rady="21.5735" start_angle="92.8624" end_angle="180.0000" /&gt;
+			&lt;line x1="-32.0000" y1="21.5735" x2="-32.0000" y2="0.0000"/&gt;
+		&lt;/g&gt;
+		&lt;g id="SHAFT" stroke="rgb(255, 255, 0)"&gt;
+		&lt;/g&gt;
+		&lt;g id="0" stroke="rgb(255, 255, 255)"&gt;
+		&lt;/g&gt;
+		&lt;g id="DEFPOINTS" stroke="rgb(255, 255, 255)"&gt;
+		&lt;/g&gt;
+		&lt;g id="CUT" stroke="rgb(255, 0, 0)"&gt;
+		&lt;/g&gt;
+&lt;/svg&gt;
+</ScalableVectorGraphic>
+            <GraphicFile1>A63-041-16_1.dxf</GraphicFile1>
+            <GraphicGroup1>Kunden</GraphicGroup1>
+            <GraphicFile5>A63-041-16.stp</GraphicFile5>
+            <GraphicGroup5>Kunden</GraphicGroup5>
+            <Article>
+              <InventoryOnReceipt>False</InventoryOnReceipt>
+              <HasOwnIdentification>False</HasOwnIdentification>
+              <ComponentList />
+              <AccessoryList />
+            </Article>
+            <Characteristic Id="Holder" System="PowerMILL">
+              <HolderGaugeLength>100</HolderGaugeLength>
+              <HolderUpperDiameter>32</HolderUpperDiameter>
+              <HolderLowerDiameter>32</HolderLowerDiameter>
+              <HolderTaperHeight>100</HolderTaperHeight>
+            </Characteristic>
+            <Characteristic Id="MHX_RXX002" System="DIN4000">
+              <CCTMS>HSK</CCTMS>
+              <CCFMS>01</CCFMS>
+              <CZCMS>0630</CZCMS>
+              <CCUMS>1</CCUMS>
+              <CCSMS>5</CCSMS>
+              <CCTWS>FDA</CCTWS>
+              <CCFWS>03</CCFWS>
+              <CZCWS>0160</CZCWS>
+              <CCUWS>0</CCUWS>
+              <CCSWS>0</CCSWS>
+              <LTA>100</LTA>
+              <TSYC>504002</TSYC>
+              <LF>100</LF>
+              <LPR>117</LPR>
+              <LSCN>21</LSCN>
+              <LSCX>33</LSCX>
+              <DF>63</DF>
+              <BD1>32</BD1>
+              <LBD1>10</LBD1>
+              <BD2>32</BD2>
+              <DCONWS>16</DCONWS>
+              <TD>10</TD>
+              <TP>1.5</TP>
+              <CNSC>0</CNSC>
+              <CXSC>0</CXSC>
+              <PENDP>0</PENDP>
+              <BLDEV>0</BLDEV>
+              <RPMX>6000</RPMX>
+              <ADJARP>0</ADJARP>
+              <LAM>0</LAM>
+              <TCMC>0</TCMC>
+              <DCP>0</DCP>
+              <LPCON>26</LPCON>
+              <CPXD>53</CPXD>
+              <CPXL>16</CPXL>
+              <DF_EXTENSION>False</DF_EXTENSION>
+              <TSYC_MS>504</TSYC_MS>
+              <TSYC_WS>2</TSYC_WS>
+              <TRENNST_MS>240300</TRENNST_MS>
+            </Characteristic>
+            <DatasetState>0</DatasetState>
+            <InvMode />
+            <InvPhysical>False</InvPhysical>
+            <InvFullCopy>False</InvFullCopy>
+          </Component>
+        </ComponentInList>
+      </ComponentList>
+      <AccessoryList />
+    </Article>
+    <Characteristic Id="TaperedTippedMill" System="PowerMILL">
+      <Diameter>70</Diameter>
+      <Fullcutterlength>5.29113500114644</Fullcutterlength>
+      <CornerRadius>0.8</CornerRadius>
+      <CutterLength>5.29113500114644</CutterLength>
+      <Taper>40</Taper>
+      <Flutes>8</Flutes>
+      <Coolants>1</Coolants>
+      <ExposedLength>40</ExposedLength>
+      <HolderGaugeLength>100</HolderGaugeLength>
+      <OverallLength>140</OverallLength>
+    </Characteristic>
+    <FlashToolMeasure>False</FlashToolMeasure>
+    <TechnologyV2>
+      <MachiningOperationId>Mill</MachiningOperationId>
+      <UseEnglishUnits>False</UseEnglishUnits>
+      <TechnologyV2Set MachiningType="RO">
+        <Position>1</Position>
+        <MachiningType>
+          <MachiningTypeId>RO</MachiningTypeId>
+          <Description>roughing</Description>
+        </MachiningType>
+        <TechnologyV2Record ChippingGroup="10">
+          <UseWithChippingGroup>True</UseWithChippingGroup>
+          <CuttingSpeed>160</CuttingSpeed>
+          <FeedPerRevolution>3.2</FeedPerRevolution>
+          <FeedPerTooth>0.4</FeedPerTooth>
+          <ChippingGroup>
+            <ChippingGroupId>10</ChippingGroupId>
+            <Name>A1</Name>
+            <CodeColor>-16776961</CodeColor>
+            <MaterialSubGroup>geglüht C ≤ 0,15 %C</MaterialSubGroup>
+            <Hardness>125 HB</Hardness>
+          </ChippingGroup>
+        </TechnologyV2Record>
+      </TechnologyV2Set>
+      <TechnologyV2Set MachiningType="FI">
+        <Position>2</Position>
+        <MachiningType>
+          <MachiningTypeId>FI</MachiningTypeId>
+          <Description>finishing</Description>
+        </MachiningType>
+        <TechnologyV2Record ChippingGroup="10">
+          <UseWithChippingGroup>True</UseWithChippingGroup>
+          <CuttingSpeed>250</CuttingSpeed>
+          <FeedPerRevolution>0.8</FeedPerRevolution>
+          <FeedPerTooth>0.1</FeedPerTooth>
+          <ChippingGroup>
+            <ChippingGroupId>10</ChippingGroupId>
+            <Name>A1</Name>
+            <CodeColor>-16776961</CodeColor>
+            <MaterialSubGroup>geglüht C ≤ 0,15 %C</MaterialSubGroup>
+            <Hardness>125 HB</Hardness>
+          </ChippingGroup>
+        </TechnologyV2Record>
+      </TechnologyV2Set>
+    </TechnologyV2>
+    <DatasetState>0</DatasetState>
+    <InvMode />
+    <InvPhysical>False</InvPhysical>
+    <InvFullCopy>False</InvFullCopy>
+    <Step>
+      <Position>1</Position>
+      <Focus>FocusArea.1</Focus>
+      <MsrMode>Measure2dMoveCross</MsrMode>
+      <MsrRangeWidth>3.6</MsrRangeWidth>
+      <MsrRangeHeight>3.6</MsrRangeHeight>
+      <ZRefMode>0</ZRefMode>
+      <ZDiaMode>0</ZDiaMode>
+      <ZResMode>0</ZResMode>
+      <XRefMode>0</XRefMode>
+      <XDiaMode>0</XDiaMode>
+      <XResMode>0</XResMode>
+      <CResMode>0</CResMode>
+      <RadiusResMode>0</RadiusResMode>
+      <Angle1ResMode>0</Angle1ResMode>
+      <Angle2ResMode>0</Angle2ResMode>
+      <TwistAngleIsAbsolute>False</TwistAngleIsAbsolute>
+      <DoMeasure>True</DoMeasure>
+      <DoPrint>True</DoPrint>
+      <IsCheckStep>False</IsCheckStep>
+      <TurnDirectionClockwise>False</TurnDirectionClockwise>
+      <SearchFocusPosition>False</SearchFocusPosition>
+      <SearchRunZ>False</SearchRunZ>
+      <SearchRunZAddUpperTol>False</SearchRunZAddUpperTol>
+      <SearchRunX>False</SearchRunX>
+      <SearchRunXSide>0</SearchRunXSide>
+      <SearchRunXMode>0</SearchRunXMode>
+      <AutoEdgeCheck>False</AutoEdgeCheck>
+      <AutoEdgeCheckTransmittedLight>False</AutoEdgeCheckTransmittedLight>
+      <YRefMode>0</YRefMode>
+      <YDiaMode>0</YDiaMode>
+      <YResMode>0</YResMode>
+      <DoLintFilter>False</DoLintFilter>
+      <DoRotation>True</DoRotation>
+      <DoIgnore>False</DoIgnore>
+      <Inertia>0</Inertia>
+      <DoInertia>False</DoInertia>
+      <DoAngleMode>False</DoAngleMode>
+      <AngleMode>1</AngleMode>
+      <IsLifetimeExpired>False</IsLifetimeExpired>
+      <CRefMode>0</CRefMode>
+      <AnglePointResMode>0</AnglePointResMode>
+      <DoLockSpindle>False</DoLockSpindle>
+      <AutoRotateToEdges>True</AutoRotateToEdges>
+      <AutoEdgeCheckReflectingCamera>False</AutoEdgeCheckReflectingCamera>
+      <SearchRunY>False</SearchRunY>
+      <DoRotationZ>False</DoRotationZ>
+      <DoSpindleIndex>False</DoSpindleIndex>
+      <AutoRotateToEdgesButWait>False</AutoRotateToEdgesButWait>
+      <IsPartsExpired>False</IsPartsExpired>
+      <WithForecast>False</WithForecast>
+      <DataTransferFromLowerStepPos>False</DataTransferFromLowerStepPos>
+      <DoMotorLockSpindle>False</DoMotorLockSpindle>
+      <CheckEdgesCount>False</CheckEdgesCount>
+      <ZOutputOnP2>False</ZOutputOnP2>
+      <ZDoMeasure>True</ZDoMeasure>
+      <TAZDiaMode>0</TAZDiaMode>
+      <TAZRefMode>0</TAZRefMode>
+      <TAZResMode>0</TAZResMode>
+      <TAXDiaMode>0</TAXDiaMode>
+      <TAXRefMode>0</TAXRefMode>
+      <TAXResMode>0</TAXResMode>
+    </Step>
+  </Tool>
+</Data>
