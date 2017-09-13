@@ -22,7 +22,7 @@ Gene expression changes drastically during the generation of oocytes and sperm i
 </dd>
 </dl>
 
-## Fig. 1 Data processing workflow of EpiDenovo
+## 
 
 ![graph](images/demo/slider/workflow1.png)
 
@@ -61,7 +61,7 @@ Liu et al. found that the number of regions that contain canonical H3K4me3 but n
 </dd>
 </dl>
 
-## Fig.2 Dynamic landscape of histone modification
+## 
 
 ![graph](images/demo/slider/Fig2.jpg)
 
