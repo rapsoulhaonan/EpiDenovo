@@ -17,13 +17,12 @@ EpiDenovo is a database for annotation of the associations between embryonic epi
 
 ![graph](images/demo/slider/workflow1.png)
 
-[![Build status](https://travis-ci.org/GMOD/jbrowse.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse)
 
 # About JBrowse
 
 [![Build status](https://travis-ci.org/GMOD/jbrowse.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse)
 
-(https://img.shields.io/badge/Jbrowse-Homepage-green.svg)](https://jbrowse.org/)
+[![GitHub release](https://img.shields.io/badge/Jbrowse-Homepage-green.svg](https://jbrowse.org/)
 
 # Installing JBrowse
 
